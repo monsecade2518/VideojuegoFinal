@@ -6,17 +6,27 @@ public class CambiarFondoZona : MonoBehaviour
     public GameObject padreExterior; // Arrastra Ext_Bg2
     public GameObject padreCueva;    // Arrastra Int_Bg
 
-    [Header("Configuración")]
+    [Header("Configuración de Zona")]
+    [Tooltip("Márcalo si el jugador inicia la escena DENTRO de la cueva (ej. Room3).")]
+    public bool empezarEnCueva = false;
+
+    [Tooltip("Déjalo desmarcado para la ENTRADA a la cueva. Márcalo para la SALIDA de la cueva.")]
+    public bool esSalida = false;
+
+    [Header("Ajustes")]
     public float velocidadTransicion = 2f;
     public string tagJugador = "Player";
 
     private SpriteRenderer[] spritesExterior;
     private SpriteRenderer[] spritesCueva;
+    private float[] alphasMaximosExterior;
+    private float[] alphasMaximosCueva;
     private ParallaxFondo[] parallaxExterior;
     private ParallaxFondo[] parallaxCueva;
 
-    private bool enCueva = false;
-    private float alphaCuevaActual = 0f;
+    private static bool enCueva = false;
+    private static float alphaCuevaActual = 0f;
+    private static bool inicializado = false;
 
     void Start()
     {
@@ -25,6 +35,7 @@ public class CambiarFondoZona : MonoBehaviour
             padreExterior.SetActive(true);
             spritesExterior = padreExterior.GetComponentsInChildren<SpriteRenderer>(true);
             parallaxExterior = padreExterior.GetComponentsInChildren<ParallaxFondo>(true);
+            alphasMaximosExterior = GuardarAlphasOriginales(spritesExterior);
         }
 
         if (padreCueva != null)
@@ -32,14 +43,28 @@ public class CambiarFondoZona : MonoBehaviour
             padreCueva.SetActive(true);
             spritesCueva = padreCueva.GetComponentsInChildren<SpriteRenderer>(true);
             parallaxCueva = padreCueva.GetComponentsInChildren<ParallaxFondo>(true);
+            alphasMaximosCueva = GuardarAlphasOriginales(spritesCueva);
         }
 
-        // Empezamos afuera: exterior visible y moviéndose; cueva invisible y QUIETA
-        SetAlphaGrupo(spritesExterior, 1f);
-        SetAlphaGrupo(spritesCueva, 0f);
-        SetParallaxActivo(parallaxExterior, true);
-        SetParallaxActivo(parallaxCueva, false);
-        alphaCuevaActual = 0f;
+        if (!inicializado)
+        {
+            enCueva = empezarEnCueva;
+            alphaCuevaActual = empezarEnCueva ? 1f : 0f;
+
+            SetAlphaGrupo(spritesExterior, alphasMaximosExterior, empezarEnCueva ? 0f : 1f);
+            SetAlphaGrupo(spritesCueva, alphasMaximosCueva, empezarEnCueva ? 1f : 0f);
+
+            // El exterior siempre acompaña la cámara para estar en su sitio al salir
+            SetParallaxActivo(parallaxExterior, true);
+            SetParallaxActivo(parallaxCueva, empezarEnCueva);
+
+            inicializado = true;
+        }
+    }
+
+    void OnDestroy()
+    {
+        inicializado = false;
     }
 
     void Update()
@@ -50,8 +75,8 @@ public class CambiarFondoZona : MonoBehaviour
         {
             alphaCuevaActual = Mathf.MoveTowards(alphaCuevaActual, alphaObjetivo, velocidadTransicion * Time.deltaTime);
 
-            SetAlphaGrupo(spritesCueva, alphaCuevaActual);
-            SetAlphaGrupo(spritesExterior, 1f - alphaCuevaActual);
+            SetAlphaGrupo(spritesCueva, alphasMaximosCueva, alphaCuevaActual);
+            SetAlphaGrupo(spritesExterior, alphasMaximosExterior, 1f - alphaCuevaActual);
         }
     }
 
@@ -59,7 +84,7 @@ public class CambiarFondoZona : MonoBehaviour
     {
         if (other.CompareTag(tagJugador))
         {
-            CambiarEstado(other.transform.position.x < transform.position.x);
+            CambiarEstado(!esSalida);
         }
     }
 
@@ -67,7 +92,12 @@ public class CambiarFondoZona : MonoBehaviour
     {
         if (other.CompareTag(tagJugador))
         {
-            CambiarEstado(other.transform.position.x > transform.position.x);
+            bool salioPorLaDerecha = other.transform.position.x > transform.position.x;
+
+            if (!esSalida)
+                CambiarEstado(salioPorLaDerecha);
+            else
+                CambiarEstado(!salioPorLaDerecha);
         }
     }
 
@@ -76,9 +106,7 @@ public class CambiarFondoZona : MonoBehaviour
         if (enCueva == entrandoACueva) return;
         enCueva = entrandoACueva;
 
-        // Encendemos el parallax de la zona a la que entramos (reiniciando su referencia de cámara)
         SetParallaxActivo(parallaxCueva, enCueva);
-        SetParallaxActivo(parallaxExterior, !enCueva);
     }
 
     private void SetParallaxActivo(ParallaxFondo[] lista, bool activo)
@@ -95,17 +123,28 @@ public class CambiarFondoZona : MonoBehaviour
         }
     }
 
-    private void SetAlphaGrupo(SpriteRenderer[] sprites, float alpha)
+    private float[] GuardarAlphasOriginales(SpriteRenderer[] sprites)
     {
-        if (sprites == null) return;
-
-        foreach (SpriteRenderer sr in sprites)
+        if (sprites == null) return null;
+        float[] alphas = new float[sprites.Length];
+        for (int i = 0; i < sprites.Length; i++)
         {
-            if (sr != null)
+            alphas[i] = sprites[i] != null ? sprites[i].color.a : 1f;
+        }
+        return alphas;
+    }
+
+    private void SetAlphaGrupo(SpriteRenderer[] sprites, float[] alphasMaximos, float multiplicador)
+    {
+        if (sprites == null || alphasMaximos == null) return;
+
+        for (int i = 0; i < sprites.Length; i++)
+        {
+            if (sprites[i] != null)
             {
-                Color c = sr.color;
-                c.a = alpha;
-                sr.color = c;
+                Color c = sprites[i].color;
+                c.a = alphasMaximos[i] * multiplicador;
+                sprites[i].color = c;
             }
         }
     }

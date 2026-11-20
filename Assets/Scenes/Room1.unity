@@ -14331,7 +14331,7 @@ Transform:
   m_GameObject: {fileID: 252353545}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.17, y: -8.69, z: 0}
+  m_LocalPosition: {x: -7.17, y: -8.09, z: 0}
   m_LocalScale: {x: 1.2899, y: 1.2899, z: 1.2899}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14351,7 +14351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFondo
   camara: {fileID: 0}
   velocidadHorizontal: 0.95
-  velocidadVertical: 1
+  velocidadVertical: 0
 --- !u!212 &252353548
 SpriteRenderer:
   serializedVersion: 2
@@ -24059,7 +24059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFondo
   camara: {fileID: 0}
-  velocidadHorizontal: 0.9
+  velocidadHorizontal: 0.95
   velocidadVertical: 0.95
 --- !u!212 &453342035
 SpriteRenderer:
@@ -26852,7 +26852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFondo
   camara: {fileID: 0}
-  velocidadHorizontal: 0.9
+  velocidadHorizontal: 0.95
   velocidadVertical: 0.95
 --- !u!212 &501471140
 SpriteRenderer:
@@ -28322,7 +28322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFondo
   camara: {fileID: 0}
   velocidadHorizontal: 0.9
-  velocidadVertical: 0.9
+  velocidadVertical: 0.8
 --- !u!212 &537689984
 SpriteRenderer:
   serializedVersion: 2
@@ -31661,8 +31661,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFondo
   camara: {fileID: 0}
-  velocidadHorizontal: 0.95
-  velocidadVertical: 0.95
+  velocidadHorizontal: 0.98
+  velocidadVertical: 0.98
 --- !u!212 &590099440
 SpriteRenderer:
   serializedVersion: 2
@@ -38441,7 +38441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFondo
   camara: {fileID: 0}
-  velocidadHorizontal: 0.9
+  velocidadHorizontal: 0.95
   velocidadVertical: 0.95
 --- !u!212 &707813866
 SpriteRenderer:
@@ -58363,8 +58363,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFondo
   camara: {fileID: 0}
-  velocidadHorizontal: 0.95
-  velocidadVertical: 0.95
+  velocidadHorizontal: 0.98
+  velocidadVertical: 0.98
 --- !u!212 &1087491987
 SpriteRenderer:
   serializedVersion: 2
@@ -92523,8 +92523,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxFondo
   camara: {fileID: 0}
-  velocidadHorizontal: 0.95
-  velocidadVertical: 0.95
+  velocidadHorizontal: 0.98
+  velocidadVertical: 0.98
 --- !u!212 &1706492931
 SpriteRenderer:
   serializedVersion: 2
