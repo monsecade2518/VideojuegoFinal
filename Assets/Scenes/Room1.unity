@@ -105391,7 +105391,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 0.904716, g: 1, b: 0.7528302, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -105399,7 +105399,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1986930607
 Transform:
@@ -113848,6 +113848,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caminado_izq
       objectReference: {fileID: 0}
+    - target: {fileID: 5257319232583375367, guid: 5610a79d49a105a4c8427b2c1a6a6055, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -113904,6 +113908,10 @@ PrefabInstance:
     - target: {fileID: 3682892278167978963, guid: 7d2f21732f4ab954abda6236d52ffbcb, type: 3}
       propertyPath: m_Name
       value: Idle_Izq
+      objectReference: {fileID: 0}
+    - target: {fileID: 3682892278167978963, guid: 7d2f21732f4ab954abda6236d52ffbcb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -114021,6 +114029,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6337534913264528544, guid: 742fca25ff6ae6641b31b703eeb7a098, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5247734477512763994, guid: 742fca25ff6ae6641b31b703eeb7a098, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
