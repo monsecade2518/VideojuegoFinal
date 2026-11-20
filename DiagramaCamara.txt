@@ -1,0 +1,21 @@
+MOVIMIENTO DE LA CÁMARA 2D
+
+[El jugador se mueve]
+         |
+         v
+[CameraFollow2D calcula el punto de enfoque] <--- [CambiaCamera]
+ Posición del jugador + desplazamiento del         Al entrar el jugador en una
+ encuadre + adelanto en la dirección del movimiento. zona, cambia el ajuste vertical.
+         |
+         v
+[Aplica la zona muerta en X e Y]
+ Dentro de la zona, conserva la posición deseada de ese eje.
+ Fuera de la zona, ajusta ese eje para seguir al jugador.
+         |
+         v
+[Ajusta la posición deseada a los bordes del nivel, si están definidos]
+         |
+         v
+[La cámara se desplaza suavemente hacia la posición deseada]
+
+Este cálculo se realiza en LateUpdate, después de que se actualiza el jugador.
