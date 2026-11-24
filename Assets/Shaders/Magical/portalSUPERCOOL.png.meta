@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 49dceab4416b9a0468388f344d29b160
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5267043241546878336
+    second: portalSUPERCOOL_0
+  - first:
+      213: 778522524453496425
+    second: portalSUPERCOOL_1
+  - first:
+      213: 3311954595496572567
+    second: portalSUPERCOOL_2
+  - first:
+      213: 6573812550048510320
+    second: portalSUPERCOOL_3
+  - first:
+      213: 1284137060706037618
+    second: portalSUPERCOOL_4
+  - first:
+      213: 7231204885713074158
+    second: portalSUPERCOOL_5
+  - first:
+      213: -6410026773848528360
+    second: portalSUPERCOOL_6
+  - first:
+      213: 3598874770599192074
+    second: portalSUPERCOOL_7
+  - first:
+      213: -275294762657310399
+    second: portalSUPERCOOL_8
+  - first:
+      213: -5575345371891713904
+    second: portalSUPERCOOL_9
+  - first:
+      213: -5811742244950046915
+    second: portalSUPERCOOL_10
+  - first:
+      213: -2717644389871494352
+    second: portalSUPERCOOL_11
+  - first:
+      213: -3069864749784938369
+    second: portalSUPERCOOL_12
+  - first:
+      213: -3275151465452336674
+    second: portalSUPERCOOL_13
+  - first:
+      213: -2513956010412132100
+    second: portalSUPERCOOL_14
+  - first:
+      213: -8565744702509252267
+    second: portalSUPERCOOL_15
+  - first:
+      213: -6432508815555143939
+    second: portalSUPERCOOL_16
+  - first:
+      213: -7015257010401189637
+    second: portalSUPERCOOL_17
+  - first:
+      213: -4022072971483982426
+    second: portalSUPERCOOL_18
+  - first:
+      213: 8939083441313297480
+    second: portalSUPERCOOL_19
+  - first:
+      213: 2064515460645175151
+    second: portalSUPERCOOL_20
+  - first:
+      213: 5732957783989835301
+    second: portalSUPERCOOL_21
+  - first:
+      213: 8370444990646095996
+    second: portalSUPERCOOL_22
+  - first:
+      213: 7391858463919689243
+    second: portalSUPERCOOL_23
+  - first:
+      213: -9165902132488447963
+    second: portalSUPERCOOL_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: portalSUPERCOOL_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1239
+        height: 1254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d06051ceb481940800000000000000
+      internalID: 5267043241546878336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_1
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1223
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966e0b77c1eddca00800000000000000
+      internalID: 778522524453496425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_2
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 1227
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796bbc8382d66fd20800000000000000
+      internalID: 3311954595496572567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_3
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1207
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07175a94fafda3b50800000000000000
+      internalID: 6573812550048510320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_4
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 1203
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27f2c426adb22d110800000000000000
+      internalID: 1284137060706037618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_5
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 1197
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee73ffee7866a5460800000000000000
+      internalID: 7231204885713074158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_6
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 1195
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ae3086c920b07a0800000000000000
+      internalID: -6410026773848528360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_7
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 1189
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a062ea44985c1f130800000000000000
+      internalID: 3598874770599192074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_8
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 915
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14919473fd4fd2cf0800000000000000
+      internalID: -275294762657310399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_9
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 878
+        width: 159
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098b6487ce460a2b0800000000000000
+      internalID: -5575345371891713904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_10
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 515
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d370f9b583b885fa0800000000000000
+      internalID: -5811742244950046915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 343
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03b50eb73dcf84ad0800000000000000
+      internalID: -2717644389871494352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_12
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 306
+        width: 7
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7843906646a565d0800000000000000
+      internalID: -3069864749784938369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_13
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 290
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed90d1c38135c82d0800000000000000
+      internalID: -3275151465452336674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_14
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 288
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf83d6af352ac1dd0800000000000000
+      internalID: -2513956010412132100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_15
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 259
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 551804a839c502980800000000000000
+      internalID: -8565744702509252267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_16
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 79
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6544a20532bb6a0800000000000000
+      internalID: -6432508815555143939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_17
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 79
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0e7fedaecc4ae90800000000000000
+      internalID: -7015257010401189637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_18
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 79
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a55ff931f9be28c0800000000000000
+      internalID: -4022072971483982426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_19
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 63
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8443e0157010e0c70800000000000000
+      internalID: 8939083441313297480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_20
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 42
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6fbe098fd1a6ac10800000000000000
+      internalID: 2064515460645175151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_21
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 45
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5265603eabe8f8f40800000000000000
+      internalID: 5732957783989835301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_22
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 41
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c709867de5bc92470800000000000000
+      internalID: 8370444990646095996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_23
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 47
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ec5e3fb18259660800000000000000
+      internalID: 7391858463919689243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portalSUPERCOOL_24
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 47
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528d703d29c2cc080800000000000000
+      internalID: -9165902132488447963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      portalSUPERCOOL_0: 5267043241546878336
+      portalSUPERCOOL_1: 778522524453496425
+      portalSUPERCOOL_10: -5811742244950046915
+      portalSUPERCOOL_11: -2717644389871494352
+      portalSUPERCOOL_12: -3069864749784938369
+      portalSUPERCOOL_13: -3275151465452336674
+      portalSUPERCOOL_14: -2513956010412132100
+      portalSUPERCOOL_15: -8565744702509252267
+      portalSUPERCOOL_16: -6432508815555143939
+      portalSUPERCOOL_17: -7015257010401189637
+      portalSUPERCOOL_18: -4022072971483982426
+      portalSUPERCOOL_19: 8939083441313297480
+      portalSUPERCOOL_2: 3311954595496572567
+      portalSUPERCOOL_20: 2064515460645175151
+      portalSUPERCOOL_21: 5732957783989835301
+      portalSUPERCOOL_22: 8370444990646095996
+      portalSUPERCOOL_23: 7391858463919689243
+      portalSUPERCOOL_24: -9165902132488447963
+      portalSUPERCOOL_3: 6573812550048510320
+      portalSUPERCOOL_4: 1284137060706037618
+      portalSUPERCOOL_5: 7231204885713074158
+      portalSUPERCOOL_6: -6410026773848528360
+      portalSUPERCOOL_7: 3598874770599192074
+      portalSUPERCOOL_8: -275294762657310399
+      portalSUPERCOOL_9: -5575345371891713904
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
