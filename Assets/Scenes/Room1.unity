@@ -59661,7 +59661,7 @@ Transform:
   m_GameObject: {fileID: 1118002385}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.68625003, z: 0}
+  m_LocalPosition: {x: 0, y: -0.499065, z: 0}
   m_LocalScale: {x: 0.7776889, y: 0.32621178, z: 0.52193886}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59679,7 +59679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39811edf540880344af9ec0ab4a1e3bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControlPersonaje2D
-  velocidad: 5
+  velocidad: 1
   animIdleDer: IdleDer
   animIdleIzq: IdleIzq
   animCaminarDer: caminadoDer

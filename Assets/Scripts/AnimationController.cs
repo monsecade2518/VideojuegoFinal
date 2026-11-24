@@ -34,9 +34,6 @@ public class ControlPersonaje2D : MonoBehaviour
             if (izquierda) moverX -= 1f;
         }
 
-        // Mueve el objeto en X
-        transform.position += new Vector3(moverX * velocidad * Time.deltaTime, 0f, 0f);
-
         // Decide qué animación toca
         if (moverX > 0f)
         {
