@@ -3,16 +3,6 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerSidescroller : MonoBehaviour
 {
-    private enum LocomotionState
-    {
-        IdleRight = 0,
-        IdleLeft = 1,
-        WalkRight = 2,
-        WalkLeft = 3
-    }
-
-    private static readonly int LocomotionStateParameter = Animator.StringToHash("LocomotionState");
-
     [Header("Feel")]
     [SerializeField] private float coyoteTime = 0.1f;
     [SerializeField] private float jumpBufferTime = 0.1f;
@@ -20,7 +10,6 @@ public class PlayerSidescroller : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float speed = 8f;
     [SerializeField] private float jumpForce = 14f;
-    [SerializeField, Min(0f)] private float walkHoldTime = 0.12f;
 
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;
@@ -34,10 +23,7 @@ public class PlayerSidescroller : MonoBehaviour
     private float vineJumpCooldown;
 
     private Rigidbody2D rb;
-    private Animator playerAnimator;
     private float horizontalInput;
-    private int heldDirection;
-    private float directionHeldSince;
     private float coyoteCounter;
     private float jumpBufferCounter;
     private bool jumpRequested;
@@ -53,7 +39,6 @@ public class PlayerSidescroller : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        playerAnimator = GetComponentInChildren<Animator>();
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
         originalGravityScale = rb.gravityScale;
     }
@@ -63,14 +48,13 @@ public class PlayerSidescroller : MonoBehaviour
         if (vineJumpCooldown > 0f)
             vineJumpCooldown -= Time.deltaTime;
 
-        UpdateHorizontalInput();
+        horizontalInput = InputHelper.Horizontal();
 
-        bool isGrounded = IsGrounded();
-        bool isClimbing = IsClimbing;
-        UpdateLocomotionAnimation(isGrounded && !isClimbing && knockbackTimer <= 0f && horizontalInput != 0f);
+        if (horizontalInput != 0)
+            FacingDirection = horizontalInput > 0 ? 1 : -1;
 
         // Ahora el suelo O la liana permiten saltar (y conservan coyote time al salir del borde)
-        if (isGrounded || isClimbing)
+        if (IsGrounded() || IsClimbing)
             coyoteCounter = coyoteTime;
         else
             coyoteCounter -= Time.deltaTime;
@@ -89,37 +73,6 @@ public class PlayerSidescroller : MonoBehaviour
 
         if (InputHelper.JumpReleased())
             jumpCutRequested = true;
-    }
-
-    private void UpdateHorizontalInput()
-    {
-        float input = InputHelper.Horizontal();
-        int direction = input == 0f ? 0 : (input > 0f ? 1 : -1);
-
-        if (direction != heldDirection)
-        {
-            heldDirection = direction;
-            directionHeldSince = Time.time;
-        }
-
-        if (direction != 0)
-            FacingDirection = direction;
-
-        horizontalInput = Time.time - directionHeldSince >= walkHoldTime ? input : 0f;
-    }
-
-    private void UpdateLocomotionAnimation(bool isWalking)
-    {
-        if (playerAnimator == null)
-            return;
-
-        LocomotionState state;
-        if (FacingDirection < 0)
-            state = isWalking ? LocomotionState.WalkLeft : LocomotionState.IdleLeft;
-        else
-            state = isWalking ? LocomotionState.WalkRight : LocomotionState.IdleRight;
-
-        playerAnimator.SetInteger(LocomotionStateParameter, (int)state);
     }
 
     private void FixedUpdate()
