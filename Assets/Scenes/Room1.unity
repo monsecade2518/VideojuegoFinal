@@ -105261,6 +105261,7 @@ MonoBehaviour:
   jumpBufferTime: 0.1
   speed: 6
   jumpForce: 14
+  walkHoldTime: 0.12
   groundCheck: {fileID: 832454129}
   groundRadius: 0.15
   groundLayer:
@@ -113850,7 +113851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5257319232583375367, guid: 5610a79d49a105a4c8427b2c1a6a6055, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -113991,6 +113992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caminado_der
       objectReference: {fileID: 0}
+    - target: {fileID: 5247734477512763994, guid: 742fca25ff6ae6641b31b703eeb7a098, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6337534913264528544, guid: 742fca25ff6ae6641b31b703eeb7a098, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.011
@@ -114029,10 +114034,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6337534913264528544, guid: 742fca25ff6ae6641b31b703eeb7a098, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5247734477512763994, guid: 742fca25ff6ae6641b31b703eeb7a098, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

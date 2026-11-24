@@ -86,14 +86,38 @@ public class LivesManager : MonoBehaviour
         reiniciandoEscena = false;
     }
 
-    private void OnGUI()
+private void OnGUI()
 {
-    GUIStyle estilo = new GUIStyle(GUI.skin.label);
-    estilo.fontSize = 28;
-    estilo.normal.textColor = Color.white;
+    // Posición y tamaño del HUD
+    Rect fondoRect = new Rect(20, 100, 230, 65);
 
-    // Dibuja el texto en la esquina superior izquierda (x: 20, y: 20)
-    GUI.Label(new Rect(20, 20, 300, 50), "Vidas: " + vidasActuales, estilo);
+    // Fondo oscuro
+    GUI.color = new Color(0.06f, 0.08f, 0.14f, 0.90f);
+    GUI.DrawTexture(fondoRect, Texture2D.whiteTexture);
+
+    // Línea decorativa superior
+    GUI.color = new Color(0.2f, 0.85f, 1f, 1f);
+    GUI.DrawTexture(new Rect(20, 100, 230, 4), Texture2D.whiteTexture);
+
+    // Texto "Lives"
+    GUIStyle livesStyle = new GUIStyle(GUI.skin.label);
+    livesStyle.fontSize = 20;
+    livesStyle.fontStyle = FontStyle.Bold;
+    livesStyle.normal.textColor = new Color(0.2f, 0.85f, 1f);
+    livesStyle.alignment = TextAnchor.MiddleCenter;
+
+    GUI.Label(new Rect(30, 105, 45, 48), "Live", livesStyle);
+
+    // Texto de vidas
+    GUIStyle vidasStyle = new GUIStyle(GUI.skin.label);
+    vidasStyle.fontSize = 25;
+    vidasStyle.fontStyle = FontStyle.Bold;
+    vidasStyle.normal.textColor = Color.white;
+    vidasStyle.alignment = TextAnchor.MiddleLeft;
+
+    GUI.Label(new Rect(85, 105, 150, 48), vidasActuales.ToString(), vidasStyle);
+
+    GUI.color = Color.white;
 }
 
 }

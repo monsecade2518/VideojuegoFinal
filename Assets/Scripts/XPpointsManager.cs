@@ -69,14 +69,38 @@ public class XPpointsManager : MonoBehaviour
         nombreRoomActual = "";
     }
 
-      private void OnGUI()
+   private void OnGUI()
 {
-    GUIStyle estilo = new GUIStyle(GUI.skin.label);
-    estilo.fontSize = 28;
-    estilo.normal.textColor = Color.white;
+    // Posición y tamaño del HUD
+    Rect fondoRect = new Rect(20, 25, 230, 65);
 
-    // Dibuja el texto en la esquina superior izquierda (x: 20, y: 20)
-    GUI.Label(new Rect(20, 60, 300, 50), "Puntos: " + puntosActuales, estilo);
+    // Fondo oscuro
+    GUI.color = new Color(0.06f, 0.08f, 0.14f, 0.90f);
+    GUI.DrawTexture(fondoRect, Texture2D.whiteTexture);
+
+    // Línea decorativa superior
+    GUI.color = new Color(0.2f, 0.85f, 1f, 1f);
+    GUI.DrawTexture(new Rect(20, 25, 230, 4), Texture2D.whiteTexture);
+
+    // Texto "XP"
+    GUIStyle xpStyle = new GUIStyle(GUI.skin.label);
+    xpStyle.fontSize = 20;
+    xpStyle.fontStyle = FontStyle.Bold;
+    xpStyle.normal.textColor = new Color(0.2f, 0.85f, 1f);
+    xpStyle.alignment = TextAnchor.MiddleCenter;
+
+    GUI.Label(new Rect(30, 32, 45, 48), "XP", xpStyle);
+
+    // Texto de puntos
+    GUIStyle puntosStyle = new GUIStyle(GUI.skin.label);
+    puntosStyle.fontSize = 25;
+    puntosStyle.fontStyle = FontStyle.Bold;
+    puntosStyle.normal.textColor = Color.white;
+    puntosStyle.alignment = TextAnchor.MiddleLeft;
+
+    GUI.Label(new Rect(85, 32, 150, 48), puntosActuales.ToString(), puntosStyle);
+
+    // Restaurar color
+    GUI.color = Color.white;
 }
-
 }
