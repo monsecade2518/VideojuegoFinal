@@ -29,6 +29,7 @@ public class PlayerSidescroller : MonoBehaviour
     private bool jumpRequested;
     private bool jumpCutRequested;
     public int FacingDirection { get; private set; } = 1;
+    public bool IsJumping { get; private set; }
     private float originalGravityScale;
 
     public float knockbackTimer = 0f;
@@ -77,6 +78,9 @@ public class PlayerSidescroller : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (IsJumping && (IsClimbing || (rb.linearVelocityY <= 0f && IsGrounded())))
+            IsJumping = false;
+
         if (knockbackTimer > 0)
         {
             knockbackTimer -= Time.fixedDeltaTime;
@@ -95,6 +99,7 @@ public class PlayerSidescroller : MonoBehaviour
 
             rb.gravityScale = originalGravityScale;
             rb.linearVelocityY = jumpForce;
+            IsJumping = true;
             jumpRequested = false;
         }
 

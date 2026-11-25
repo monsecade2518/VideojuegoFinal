@@ -1,7 +1,6 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class ControlPersonaje2D : MonoBehaviour
+public class AnimationController : MonoBehaviour
 {
     [Header("Movimiento")]
     public float velocidad = 5f;
@@ -12,43 +11,38 @@ public class ControlPersonaje2D : MonoBehaviour
     public string animCaminarDer = "caminadoDer";
     public string animCaminarIzq = "caminadoIzq";
 
+    public string animSaltoIzq = "saltoIzq";
+
+    public string animSaltoDer = "SaltoDer";
+
     private Animator animator;
+    private PlayerSidescroller jugador;
     private int ultimaDireccion = 1; // 1 = derecha, -1 = izquierda
     private string animActual = "";
 
     void Awake()
     {
         animator = GetComponent<Animator>();
+        jugador = GetComponentInParent<PlayerSidescroller>();
     }
 
-    void Update()
+    void LateUpdate()
     {
-        float moverX = 0f;
+        float moverX = InputHelper.Horizontal();
 
-        if (Keyboard.current != null)
+        if (moverX != 0f)
+            ultimaDireccion = moverX > 0f ? 1 : -1;
+
+        if (jugador != null && jugador.IsJumping)
         {
-            bool derecha = Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed;
-            bool izquierda = Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed;
-
-            if (derecha) moverX += 1f;
-            if (izquierda) moverX -= 1f;
+            ReproducirAnimacion(ultimaDireccion < 0 ? animSaltoIzq : animSaltoDer);
+            return;
         }
 
-        // Decide qué animación toca
-        if (moverX > 0f)
-        {
-            ultimaDireccion = 1;
-            ReproducirAnimacion(animCaminarDer);
-        }
-        else if (moverX < 0f)
-        {
-            ultimaDireccion = -1;
-            ReproducirAnimacion(animCaminarIzq);
-        }
+        if (moverX != 0f)
+            ReproducirAnimacion(ultimaDireccion < 0 ? animCaminarIzq : animCaminarDer);
         else
-        {
             ReproducirAnimacion(ultimaDireccion < 0 ? animIdleIzq : animIdleDer);
-        }
     }
 
     void ReproducirAnimacion(string nuevaAnim)
@@ -56,6 +50,6 @@ public class ControlPersonaje2D : MonoBehaviour
         if (animActual == nuevaAnim) return;
 
         animActual = nuevaAnim;
-        animator.Play(nuevaAnim);
+        animator.Play(nuevaAnim, 0, 0f);
     }
 }

@@ -126,9 +126,11 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39811edf540880344af9ec0ab4a1e3bd, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ControlPersonaje2D
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationController
   velocidad: 1
   animIdleDer: IdleDer
   animIdleIzq: IdleIzq
   animCaminarDer: caminadoDer
   animCaminarIzq: caminadoIzq
+  animSaltoIzq: saltoIzq
+  animSaltoDer: SaltoDer

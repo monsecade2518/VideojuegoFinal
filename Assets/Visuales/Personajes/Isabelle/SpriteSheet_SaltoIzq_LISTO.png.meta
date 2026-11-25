@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: 606e6fc79bd169649a3e7688f243144d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8516609261788387639
+    second: SpriteSheet_SaltoIzq_LISTO_0
+  - first:
+      213: -4296841765605179701
+    second: SpriteSheet_SaltoIzq_LISTO_1
+  - first:
+      213: -2069196812368518396
+    second: SpriteSheet_SaltoIzq_LISTO_2
+  - first:
+      213: 6488262294077197930
+    second: SpriteSheet_SaltoIzq_LISTO_3
+  - first:
+      213: -6498036201978464313
+    second: SpriteSheet_SaltoIzq_LISTO_4
+  - first:
+      213: -7397798892630686482
+    second: SpriteSheet_SaltoIzq_LISTO_5
+  - first:
+      213: 7020002095592398244
+    second: SpriteSheet_SaltoIzq_LISTO_6
+  - first:
+      213: -2202383633094663502
+    second: SpriteSheet_SaltoIzq_LISTO_7
+  - first:
+      213: 6870767349464175918
+    second: SpriteSheet_SaltoIzq_LISTO_8
+  - first:
+      213: -8776895795714056847
+    second: SpriteSheet_SaltoIzq_LISTO_9
+  - first:
+      213: -5065470446414145535
+    second: SpriteSheet_SaltoIzq_LISTO_10
+  - first:
+      213: 8879153812679423247
+    second: SpriteSheet_SaltoIzq_LISTO_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_SaltoIzq_LISTO_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08528646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c62d44dffceec980800000000000000
+      internalID: -8516609261788387639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_SaltoIzq_LISTO_1
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08528646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce7a090e2d8e54c0800000000000000
+      internalID: -4296841765605179701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_SaltoIzq_LISTO_2
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1536
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08528646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4036764567cb843e0800000000000000
+      internalID: -2069196812368518396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_SaltoIzq_LISTO_3
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1536
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08528646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e48002e20fa0a50800000000000000
+      internalID: 6488262294077197930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_SaltoIzq_LISTO_4
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 1536
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08528646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7f17b908652d5a0800000000000000
+      internalID: -6498036201978464313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_SaltoIzq_LISTO_5
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 1536
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08528646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee448f43a1db55990800000000000000
+      internalID: -7397798892630686482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_SaltoIzq_LISTO_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08528646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad584e56be0c6160800000000000000
+      internalID: 7020002095592398244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_SaltoIzq_LISTO_7
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08528646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2224221cf8f61e0800000000000000
+      internalID: -2202383633094663502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_SaltoIzq_LISTO_8
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08528646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e251a2f508ed95f50800000000000000
+      internalID: 6870767349464175918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_SaltoIzq_LISTO_9
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08528646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d18d996c3323680800000000000000
+      internalID: -8776895795714056847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_SaltoIzq_LISTO_10
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 0
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08528646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108de3d8775d3b9b0800000000000000
+      internalID: -5065470446414145535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_SaltoIzq_LISTO_11
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08528646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05ffce4957193b70800000000000000
+      internalID: 8879153812679423247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5f5e961a3cca0ef4b81f23bcd9c80b76
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1536.0,"y":1536.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0852864608168602},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      SpriteSheet_SaltoIzq_LISTO_0: -8516609261788387639
+      SpriteSheet_SaltoIzq_LISTO_1: -4296841765605179701
+      SpriteSheet_SaltoIzq_LISTO_10: -5065470446414145535
+      SpriteSheet_SaltoIzq_LISTO_11: 8879153812679423247
+      SpriteSheet_SaltoIzq_LISTO_2: -2069196812368518396
+      SpriteSheet_SaltoIzq_LISTO_3: 6488262294077197930
+      SpriteSheet_SaltoIzq_LISTO_4: -6498036201978464313
+      SpriteSheet_SaltoIzq_LISTO_5: -7397798892630686482
+      SpriteSheet_SaltoIzq_LISTO_6: 7020002095592398244
+      SpriteSheet_SaltoIzq_LISTO_7: -2202383633094663502
+      SpriteSheet_SaltoIzq_LISTO_8: 6870767349464175918
+      SpriteSheet_SaltoIzq_LISTO_9: -8776895795714056847
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
