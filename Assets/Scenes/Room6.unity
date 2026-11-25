@@ -3525,10 +3525,10 @@ MonoBehaviour:
   followX: 1
   followY: 1
   fixedY: 0
-  smoothTime: 0.2
+  smoothTime: 0.5
   deadZone: {x: 0, y: 1.5}
   lookAheadDistance: 2
-  lookAheadSmooth: 0.5
+  lookAheadSmooth: 0.7
   levelBounds: {fileID: 1736599924}
 --- !u!1 &553642124
 GameObject:
