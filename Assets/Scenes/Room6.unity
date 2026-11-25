@@ -5352,6 +5352,72 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2075413980}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1076147697
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1920482431}
+    m_Modifications:
+    - target: {fileID: 139661201979194150, guid: f86ef59863e8cc04d87f97cb1190abf5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755493550059404451, guid: f86ef59863e8cc04d87f97cb1190abf5, type: 3}
+      propertyPath: m_Name
+      value: PlayerVisual
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909879848800760456, guid: f86ef59863e8cc04d87f97cb1190abf5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909879848800760456, guid: f86ef59863e8cc04d87f97cb1190abf5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909879848800760456, guid: f86ef59863e8cc04d87f97cb1190abf5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909879848800760456, guid: f86ef59863e8cc04d87f97cb1190abf5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909879848800760456, guid: f86ef59863e8cc04d87f97cb1190abf5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909879848800760456, guid: f86ef59863e8cc04d87f97cb1190abf5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909879848800760456, guid: f86ef59863e8cc04d87f97cb1190abf5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909879848800760456, guid: f86ef59863e8cc04d87f97cb1190abf5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909879848800760456, guid: f86ef59863e8cc04d87f97cb1190abf5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909879848800760456, guid: f86ef59863e8cc04d87f97cb1190abf5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f86ef59863e8cc04d87f97cb1190abf5, type: 3}
+--- !u!4 &1076147698 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1909879848800760456, guid: f86ef59863e8cc04d87f97cb1190abf5, type: 3}
+  m_PrefabInstance: {fileID: 1076147697}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1080758389
 GameObject:
   m_ObjectHideFlags: 0
@@ -9234,7 +9300,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.904716, g: 1, b: 0.7528302, a: 1}
@@ -9259,6 +9325,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1076147698}
   - {fileID: 1435395918}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9323,7 +9390,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.034698486, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9333,7 +9400,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.4887085, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1920482434
 MonoBehaviour:
