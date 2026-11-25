@@ -21518,7 +21518,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0055231303, y: 0}
+  m_Offset: {x: -0.00025837123, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -21528,7 +21528,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.9889537, y: 1}
+  m_Size: {x: 1.0005167, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &408481459
 SpriteRenderer:
@@ -22020,7 +22020,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.01738453, y: 0}
+  m_Offset: {x: -0.0026698112, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -22030,7 +22030,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.96523094, y: 1}
+  m_Size: {x: 0.9946604, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &420108764
 SpriteRenderer:
@@ -49088,7 +49088,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.00023007393, y: 0}
+  m_Offset: {x: -0.0007138252, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -49098,7 +49098,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.0909276, y: 1}
+  m_Size: {x: 1.1230145, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &914841343
 SpriteRenderer:
@@ -50773,7 +50773,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.00006198883, y: 0}
+  m_Offset: {x: -0.00074768066, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -50783,7 +50783,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.0919485, y: 1}
+  m_Size: {x: 1.1224375, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &947653948
 SpriteRenderer:
@@ -63268,7 +63268,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.000587821, y: 0}
+  m_Offset: {x: 0.0020476878, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -63278,7 +63278,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.3659923, y: 1}
+  m_Size: {x: 1.4872568, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &1187562930
 SpriteRenderer:
@@ -67440,7 +67440,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.00015735626, y: 0}
+  m_Offset: {x: -0.0028533936, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -67450,7 +67450,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.8531666, y: 1}
+  m_Size: {x: 0.97714996, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &1252605791
 SpriteRenderer:
@@ -110767,7 +110767,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2080581700}
   - component: {fileID: 2080581701}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: InvisibleWall_Vine1
   m_TagString: InvisibleWall
   m_Icon: {fileID: 0}
@@ -111344,7 +111344,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0008946657, y: 0}
+  m_Offset: {x: 0.0008947551, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -111354,7 +111354,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.933794, y: 1}
+  m_Size: {x: 0.99463207, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &2089786602
 SpriteRenderer:
@@ -113575,7 +113575,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.017833233, y: 0}
+  m_Offset: {x: 0.0030126572, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -113585,7 +113585,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.96433353, y: 1}
+  m_Size: {x: 0.9939747, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &2142364596
 SpriteRenderer:
