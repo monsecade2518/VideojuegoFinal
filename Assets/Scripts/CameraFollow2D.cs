@@ -33,6 +33,12 @@ public class CameraFollow2D : MonoBehaviour
     private void Awake()
     {
         cam = GetComponent<Camera>();
+    }
+
+    private void OnEnable()
+    {
+        velocity = Vector3.zero;
+        currentLookAhead = Vector2.zero;
 
         if (target != null)
         {

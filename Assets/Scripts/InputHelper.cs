@@ -5,7 +5,11 @@ using UnityEngine;
 #endif
 
 public static class InputHelper{
+    public static bool GameplayInputBlocked { get; set; }
+
     public static float Horizontal(){
+        if (GameplayInputBlocked) return 0f;
+
         #if ENABLE_INPUT_SYSTEM
             var kb = Keyboard.current;
             if (kb == null) return 0f;
@@ -19,6 +23,8 @@ public static class InputHelper{
     }
 
     public static float Vertical(){
+        if (GameplayInputBlocked) return 0f;
+
         #if ENABLE_INPUT_SYSTEM
             var kb = Keyboard.current;
             if (kb == null) return 0f;
@@ -32,6 +38,8 @@ public static class InputHelper{
     }
     
     public static bool JumpPressed(){
+        if (GameplayInputBlocked) return false;
+
         #if ENABLE_INPUT_SYSTEM
             return Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame;
         #else
@@ -40,6 +48,8 @@ public static class InputHelper{
     }
 
     public static bool JumpReleased(){
+        if (GameplayInputBlocked) return false;
+
         #if ENABLE_INPUT_SYSTEM
             return Keyboard.current != null && Keyboard.current.spaceKey.wasReleasedThisFrame;
         #else
@@ -56,6 +66,8 @@ public static class InputHelper{
     }
 
     public static bool VinesPressed(){
+        if (GameplayInputBlocked) return false;
+
         #if ENABLE_INPUT_SYSTEM
             return Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame;
         #else
@@ -64,6 +76,8 @@ public static class InputHelper{
     }
 
     public static bool PlantsPressed(){
+        if (GameplayInputBlocked) return false;
+
         #if ENABLE_INPUT_SYSTEM
             return Keyboard.current != null && Keyboard.current.qKey.wasPressedThisFrame;
         #else

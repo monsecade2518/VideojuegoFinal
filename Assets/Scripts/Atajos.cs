@@ -6,6 +6,9 @@ public class Atajos : MonoBehaviour
 {
    void Update()
    {
+      if (InputHelper.GameplayInputBlocked)
+         return;
+
       if (Keyboard.current.digit1Key.wasPressedThisFrame) {
         XPpointsManager.Instance.SumarPuntos(60);
       }

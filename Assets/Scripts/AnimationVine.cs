@@ -4,6 +4,7 @@ public class AnimationVine : MonoBehaviour
 {
     [SerializeField] private float velocidad = 3f;
     [SerializeField] private string tagInvisibleWall = "InvisibleWall_vine";
+    [SerializeField] private Collider2D tope;
     private bool subiendo = false;
 
     public bool estaLista = false;
@@ -17,6 +18,7 @@ public class AnimationVine : MonoBehaviour
 
     public void Activar()
     {
+        if (subiendo || estaLista) return;
         subiendo = true;
         Debug.Log("Activando liana");
     }
@@ -33,10 +35,17 @@ public class AnimationVine : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other){
-            if (other.CompareTag(tagInvisibleWall)){
-                subiendo = false;
-                estaLista = true;
-            }
-        }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!subiendo) return;
+
+        bool llegoAlTope = tope != null
+            ? other == tope
+            : other.CompareTag(tagInvisibleWall);
+
+        if (!llegoAlTope) return;
+
+        subiendo = false;
+        estaLista = true;
+    }
 }

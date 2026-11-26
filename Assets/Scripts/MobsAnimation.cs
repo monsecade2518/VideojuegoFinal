@@ -53,7 +53,7 @@ public class MobsAnimation : MonoBehaviour
         {
             Vector2 normal = collision.GetContact(0).normal;
 
-            if (gameObject.CompareTag("Mob") && normal.y < -0.5f)
+            if ((gameObject.CompareTag("Mob") ||gameObject.CompareTag("BossFinal")) && normal.y < -0.5f)
             {
                 if (playerRb != null)
                 {
@@ -70,6 +70,13 @@ public class MobsAnimation : MonoBehaviour
                     LivesManager.Instance.RestarVidas(1);
                     Debug.Log("El jugador recibió daño MENOS 1 VIDA.");
                 }
+
+                if (gameObject.CompareTag("BossFinal")){
+
+                    LivesManager.Instance.RestarVidas(2);
+                    Debug.Log("El jugador recibió daño MENOS 2 VIDAS.");
+                }
+
 
                 else if (gameObject.CompareTag("Mob2")){
 

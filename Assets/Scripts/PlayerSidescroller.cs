@@ -44,6 +44,14 @@ public class PlayerSidescroller : MonoBehaviour
         originalGravityScale = rb.gravityScale;
     }
 
+    public void ClearBufferedInput()
+    {
+        horizontalInput = 0f;
+        jumpBufferCounter = 0f;
+        jumpRequested = false;
+        jumpCutRequested = false;
+    }
+
     private void Update()
     {
         if (vineJumpCooldown > 0f)
