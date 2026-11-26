@@ -527244,6 +527244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlantAnimation
   velocidad: 10
   tagInvisibleWall: InvisibleWall
+  visual: {fileID: 0}
 --- !u!50 &1787109280
 Rigidbody2D:
   serializedVersion: 5
