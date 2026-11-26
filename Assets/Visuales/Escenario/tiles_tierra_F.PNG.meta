@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6cee6784bf52ffc4ab9f3f2cfad2afbf
+guid: 40748054e3fbc8b4fbff550ca6d7343c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6487720566722000263
-    second: tileset2_prueba2_0
+      213: 8519061919075782362
+    second: tiles_tierra_F_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,10 +72,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tileset2_prueba2_0
+      name: tiles_tierra_F_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,14 +128,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 97a0a8a948cf6f5a0800000000000000
-      internalID: -6487720566722000263
+      spriteID: adec112fda9c93670800000000000000
+      internalID: 8519061919075782362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset2_prueba2_1
+      name: tiles_tierra_F_1
       rect:
         serializedVersion: 2
         x: 128
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 719705e91a5797744824c55b8be14ba3
-      internalID: -1018202634
+      spriteID: 845b6ea86fc1d724491a7a5f81be34e2
+      internalID: -1410965454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset2_prueba2_2
+      name: tiles_tierra_F_2
       rect:
         serializedVersion: 2
         x: 256
@@ -172,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e074c359db519f140a095fe247b7c079
-      internalID: -8588777
+      spriteID: dea4d58aeb6152d45a3234ce571f16c5
+      internalID: 357874019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset2_prueba2_3
+      name: tiles_tierra_F_3
       rect:
         serializedVersion: 2
         x: 384
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab88ebd7727912b40b738589ad611e68
-      internalID: -53946953
+      spriteID: 37d489af224d34e4f88bb0dbb39cf294
+      internalID: -2133376803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset2_prueba2_4
+      name: tiles_tierra_F_4
       rect:
         serializedVersion: 2
         x: 0
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30d7da8177eb83245aa22fb0d2f1a751
-      internalID: 306464284
+      spriteID: edc940c349b561c4bac7702cd5736b26
+      internalID: 444261072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset2_prueba2_5
+      name: tiles_tierra_F_5
       rect:
         serializedVersion: 2
         x: 128
@@ -238,14 +238,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9483f24286f0404fb4a26af20222805
-      internalID: 783810380
+      spriteID: 00b34fb6587cab4438fc601626552b38
+      internalID: -1034038088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset2_prueba2_6
+      name: tiles_tierra_F_6
       rect:
         serializedVersion: 2
         x: 256
@@ -260,14 +260,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bb37e20cf6967847a58f4444530cc16
-      internalID: -1304263506
+      spriteID: 1824a0e41627f7e40826b4415037a639
+      internalID: 696427721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset2_prueba2_7
+      name: tiles_tierra_F_7
       rect:
         serializedVersion: 2
         x: 384
@@ -282,14 +282,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8adc4cbba771784cbbdb560723a5fc3
-      internalID: 2074232137
+      spriteID: d63b43e57fe58644ca0f43fdee80fc54
+      internalID: -59839188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset2_prueba2_8
+      name: tiles_tierra_F_8
       rect:
         serializedVersion: 2
         x: 0
@@ -304,14 +304,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6f2c0822a351fb479b10ced216f390d
-      internalID: -1279986951
+      spriteID: 8ae2b5655d71a2540bebf693e8454525
+      internalID: -1872380933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset2_prueba2_9
+      name: tiles_tierra_F_9
       rect:
         serializedVersion: 2
         x: 128
@@ -326,14 +326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3a7a10abe09fa74391aabde3ce9d92c
-      internalID: 393312710
+      spriteID: e6874be5a2e99524d891fced6b502644
+      internalID: -389096901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset2_prueba2_10
+      name: tiles_tierra_F_10
       rect:
         serializedVersion: 2
         x: 256
@@ -348,14 +348,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e9b605c509e9134e8397b5bfaf890a6
-      internalID: -478765288
+      spriteID: 745cb00764f72d14795df19c1e928420
+      internalID: -285665481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset2_prueba2_11
+      name: tiles_tierra_F_11
       rect:
         serializedVersion: 2
         x: 384
@@ -370,14 +370,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 332b045ca6166974db438fe71f896d25
-      internalID: -1357415195
+      spriteID: 77430fdb3434cf84dafa444cc93c9e91
+      internalID: -860700707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset2_prueba2_12
+      name: tiles_tierra_F_12
       rect:
         serializedVersion: 2
         x: 0
@@ -392,14 +392,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2061dae6269ef6043a7ba578438b4b69
-      internalID: 239094475
+      spriteID: c099c53a0bf866946b37bd589e2ac330
+      internalID: 2055011307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset2_prueba2_13
+      name: tiles_tierra_F_13
       rect:
         serializedVersion: 2
         x: 128
@@ -414,14 +414,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8f50f102748e374fb7a12ef47b9efad
-      internalID: 839364564
+      spriteID: 40351744af3932446a9a07ddea0d1394
+      internalID: 548773438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset2_prueba2_14
+      name: tiles_tierra_F_14
       rect:
         serializedVersion: 2
         x: 256
@@ -436,14 +436,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14f32abe223ab8a4590fe75a8402cd9e
-      internalID: 2070651382
+      spriteID: 95be6c64404ba1f478800a24d479bc1f
+      internalID: 979934927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset2_prueba2_15
+      name: tiles_tierra_F_15
       rect:
         serializedVersion: 2
         x: 384
@@ -458,8 +458,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f003720bdb8737d4e9c58dba4230eb51
-      internalID: 1985796412
+      spriteID: 34d19c7b107a62f4a899ee690125501a
+      internalID: 1882994628
       vertices: []
       indices: 
       edges: []
@@ -468,7 +468,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 26f5b4f21a6a10c45b3514698e002050
+    spriteID: f5acdf76ce7e1014a88adde5768100d9
     internalID: 0
     vertices: []
     indices: 
@@ -480,22 +480,22 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      tileset2_prueba2_0: -6487720566722000263
-      tileset2_prueba2_1: -1018202634
-      tileset2_prueba2_10: -478765288
-      tileset2_prueba2_11: -1357415195
-      tileset2_prueba2_12: 239094475
-      tileset2_prueba2_13: 839364564
-      tileset2_prueba2_14: 2070651382
-      tileset2_prueba2_15: 1985796412
-      tileset2_prueba2_2: -8588777
-      tileset2_prueba2_3: -53946953
-      tileset2_prueba2_4: 306464284
-      tileset2_prueba2_5: 783810380
-      tileset2_prueba2_6: -1304263506
-      tileset2_prueba2_7: 2074232137
-      tileset2_prueba2_8: -1279986951
-      tileset2_prueba2_9: 393312710
+      tiles_tierra_F_0: 8519061919075782362
+      tiles_tierra_F_1: -1410965454
+      tiles_tierra_F_10: -285665481
+      tiles_tierra_F_11: -860700707
+      tiles_tierra_F_12: 2055011307
+      tiles_tierra_F_13: 548773438
+      tiles_tierra_F_14: 979934927
+      tiles_tierra_F_15: 1882994628
+      tiles_tierra_F_2: 357874019
+      tiles_tierra_F_3: -2133376803
+      tiles_tierra_F_4: 444261072
+      tiles_tierra_F_5: -1034038088
+      tiles_tierra_F_6: 696427721
+      tiles_tierra_F_7: -59839188
+      tiles_tierra_F_8: -1872380933
+      tiles_tierra_F_9: -389096901
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
