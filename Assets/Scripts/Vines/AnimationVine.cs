@@ -5,6 +5,9 @@ public class AnimationVine : MonoBehaviour
     [SerializeField] private float velocidad = 3f;
     [SerializeField] private string tagInvisibleWall = "InvisibleWall_vine";
     [SerializeField] private Collider2D tope;
+
+    [SerializeField] private SpriteRenderer visualOculto;
+    private float alphaOriginal;
     private bool subiendo = false;
 
     public bool estaLista = false;
@@ -14,13 +17,23 @@ public class AnimationVine : MonoBehaviour
      private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        rb = GetComponent<Rigidbody2D>();
+
+    if (visualOculto != null)
+    {
+        alphaOriginal = visualOculto.color.a;
+        CambiarAlpha(0f);
+    }
     }
 
     public void Activar()
     {
         if (subiendo || estaLista) return;
+        CambiarAlpha(alphaOriginal);
         subiendo = true;
         Debug.Log("Activando liana");
+        
     }
     void FixedUpdate(){
         
@@ -47,5 +60,14 @@ public class AnimationVine : MonoBehaviour
 
         subiendo = false;
         estaLista = true;
+    }
+
+    private void CambiarAlpha(float alpha)
+    {
+        if (visualOculto == null) return;
+
+        Color color = visualOculto.color;
+        color.a = alpha;
+        visualOculto.color = color;
     }
 }
