@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,6 +6,7 @@ public class LivesManager : MonoBehaviour
 {
     public static LivesManager Instance { get; private set; }
     public bool CinematicaRoomVista { get; set; }
+    public bool ReiniciandoEscena => reiniciandoEscena;
 
     public int vidasActuales = 3;
     public int vidasMaximas = 3;
@@ -48,15 +50,21 @@ public class LivesManager : MonoBehaviour
 
     public void RestarVidas(int cantidad)
     {
-        if (reiniciandoEscena) return;
+        if (reiniciandoEscena || cantidad <= 0) return;
 
-        vidasActuales -= cantidad;
+        vidasActuales = Mathf.Max(0, vidasActuales - cantidad);
         Debug.Log("Vidas restantes: " + vidasActuales);
 
-        if (vidasActuales <= 0)
+        if (vidasActuales == 0)
         {
-            vidasActuales = 0;
             MatarPersonaje();
+            return;
+        }
+
+        if (cantidad == 1 || cantidad == 2)
+        {
+            PlayerSidescroller jugador = FindFirstObjectByType<PlayerSidescroller>();
+            jugador?.GetComponentInChildren<AnimationController>()?.ReproducirDano();
         }
     }
 
@@ -76,10 +84,36 @@ public class LivesManager : MonoBehaviour
     public void MatarPersonaje()
     {
         if (reiniciandoEscena) return;
-        
+
+        vidasActuales = 0;
         reiniciandoEscena = true;
+        Scene escena = SceneManager.GetActiveScene();
+        PlayerSidescroller jugador = FindFirstObjectByType<PlayerSidescroller>();
+        AnimationController animacion = jugador != null ? jugador.GetComponentInChildren<AnimationController>() : null;
+
+        if (animacion != null && animacion.ReproducirMuerte())
+        {
+            jugador.DetenerPorMuerte();
+            StartCoroutine(ReiniciarTrasMuerte(escena, animacion));
+            return;
+        }
+
+        ReiniciarEscena(escena);
+    }
+
+    private IEnumerator ReiniciarTrasMuerte(Scene escena, AnimationController animacion)
+    {
+        while (reiniciandoEscena && animacion != null && animacion.MuerteEnCurso)
+            yield return null;
+
+        if (reiniciandoEscena && SceneManager.GetActiveScene() == escena)
+            ReiniciarEscena(escena);
+    }
+
+    private void ReiniciarEscena(Scene escena)
+    {
         Debug.Log("El personaje se quedó sin vidas. Reiniciando sala...");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(escena.buildIndex);
     }
 
     public void ReiniciarPartidaCompleta()

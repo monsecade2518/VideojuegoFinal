@@ -51,6 +51,10 @@ public class MobsAnimation : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Player"))
         {
+            LivesManager vidas = LivesManager.Instance;
+            if (vidas?.ReiniciandoEscena == true)
+                return;
+
             Vector2 normal = collision.GetContact(0).normal;
 
             if ((gameObject.CompareTag("Mob") ||gameObject.CompareTag("BossFinal")) && normal.y < -0.5f)
@@ -67,22 +71,25 @@ public class MobsAnimation : MonoBehaviour
             {
                 if (gameObject.CompareTag("Mob")){
 
-                    LivesManager.Instance.RestarVidas(1);
+                    vidas.RestarVidas(1);
                     Debug.Log("El jugador recibió daño MENOS 1 VIDA.");
                 }
 
                 if (gameObject.CompareTag("BossFinal")){
 
-                    LivesManager.Instance.RestarVidas(2);
+                    vidas.RestarVidas(2);
                     Debug.Log("El jugador recibió daño MENOS 2 VIDAS.");
                 }
 
 
                 else if (gameObject.CompareTag("Mob2")){
 
-                    LivesManager.Instance.RestarVidas(2);
+                    vidas.RestarVidas(2);
                     Debug.Log("El jugador recibió daño MENOS 2 VIDAS.");
                 }
+
+                if (vidas?.ReiniciandoEscena == true)
+                    return;
 
                 collision.gameObject.GetComponent<PlayerSidescroller>().knockbackTimer = 0.2f;
                 // Si el jugador está a la izquierda del mob, empuja a la izquierda (-1), si no, a la derecha (1)

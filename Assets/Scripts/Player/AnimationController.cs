@@ -15,10 +15,18 @@ public class AnimationController : MonoBehaviour
 
     public string animSaltoDer = "SaltoDer";
 
+    [SerializeField] private string animDanoDer = "DanoDer";
+    [SerializeField] private string animDanoIzq = "DanoIzq";
+    [SerializeField] private string animMuerteDer = "MuerteDer";
+    [SerializeField] private string animMuerteIzq = "MuerteIzq";
+
     private Animator animator;
     private PlayerSidescroller jugador;
     private int ultimaDireccion = 1; // 1 = derecha, -1 = izquierda
     private string animActual = "";
+    private int estadoReaccion;
+    private int fotogramaInicioReaccion;
+    private bool muerto;
 
     void Awake()
     {
@@ -28,9 +36,15 @@ public class AnimationController : MonoBehaviour
 
     void LateUpdate()
     {
+        if (muerto || ReaccionEnCurso)
+            return;
+
+        estadoReaccion = 0;
         float moverX = InputHelper.Horizontal();
 
-        if (moverX != 0f)
+        if (jugador != null)
+            ultimaDireccion = jugador.FacingDirection;
+        else if (moverX != 0f)
             ultimaDireccion = moverX > 0f ? 1 : -1;
 
         if (jugador != null && jugador.IsJumping)
@@ -43,6 +57,56 @@ public class AnimationController : MonoBehaviour
             ReproducirAnimacion(ultimaDireccion < 0 ? animCaminarIzq : animCaminarDer);
         else
             ReproducirAnimacion(ultimaDireccion < 0 ? animIdleIzq : animIdleDer);
+    }
+
+    public void ReproducirDano()
+    {
+        if (!muerto)
+            IniciarReaccion(animDanoDer, animDanoIzq);
+    }
+
+    public bool ReproducirMuerte()
+    {
+        muerto = IniciarReaccion(animMuerteDer, animMuerteIzq);
+        return muerto;
+    }
+
+    public bool MuerteEnCurso => muerto && ReaccionEnCurso;
+
+    private bool ReaccionEnCurso
+    {
+        get
+        {
+            if (estadoReaccion == 0 || !isActiveAndEnabled || animator == null || !animator.isActiveAndEnabled ||
+                animator.runtimeAnimatorController == null)
+                return false;
+
+            // Animator.Play puede tardar hasta la siguiente evaluación del Animator.
+            if (Time.frameCount == fotogramaInicioReaccion)
+                return true;
+
+            AnimatorStateInfo estado = animator.GetCurrentAnimatorStateInfo(0);
+            return estado.fullPathHash == estadoReaccion && estado.normalizedTime < 1f;
+        }
+    }
+
+    private bool IniciarReaccion(string derecha, string izquierda)
+    {
+        if (!isActiveAndEnabled || animator == null || !animator.isActiveAndEnabled ||
+            animator.runtimeAnimatorController == null || animator.layerCount == 0)
+            return false;
+
+        int direccion = jugador != null ? jugador.FacingDirection : ultimaDireccion;
+        string nombre = direccion < 0 ? izquierda : derecha;
+        int estado = Animator.StringToHash(animator.GetLayerName(0) + "." + nombre);
+        if (!animator.HasState(0, estado))
+            return false;
+
+        estadoReaccion = estado;
+        fotogramaInicioReaccion = Time.frameCount;
+        animActual = nombre;
+        animator.Play(estado, 0, 0f);
+        return true;
     }
 
     void ReproducirAnimacion(string nuevaAnim)

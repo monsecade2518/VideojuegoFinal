@@ -7,7 +7,7 @@ public class LoadScenes : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (cargandoEscena) return;
+        if (cargandoEscena || LivesManager.Instance?.ReiniciandoEscena == true) return;
 
         if (other.CompareTag("Portal"))
         {
@@ -22,7 +22,6 @@ public class LoadScenes : MonoBehaviour
 
         if (other.CompareTag("LevelBound"))
         {
-            LivesManager.Instance.RestarVidas(3);
             cargandoEscena = true;
             LivesManager.Instance.MatarPersonaje();
         }

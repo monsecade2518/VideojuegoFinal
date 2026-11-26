@@ -58,6 +58,14 @@ public class PlayerSidescroller : MonoBehaviour
         jumpCutRequested = false;
     }
 
+    public void DetenerPorMuerte()
+    {
+        ClearBufferedInput();
+        rb.linearVelocity = Vector2.zero;
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        enabled = false;
+    }
+
     private void Update()
     {
         if (vineJumpCooldown > 0f)
@@ -93,6 +101,9 @@ public class PlayerSidescroller : MonoBehaviour
     private void FixedUpdate()
     {
         AplicarDanoPorTemblor();
+
+        if (!enabled)
+            return;
 
         if (IsJumping && (IsClimbing || (rb.linearVelocityY <= 0f && IsGrounded())))
             IsJumping = false;
