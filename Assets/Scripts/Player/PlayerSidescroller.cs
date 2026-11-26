@@ -41,7 +41,7 @@ public class PlayerSidescroller : MonoBehaviour
     public float knockbackTimer = 0f;
 
     // Propiedad para saber si realmente está agarrado a la liana
-    private bool IsClimbing => currentVine != null && currentVine.estaLista && vineJumpCooldown <= 0f;
+    public bool IsClimbing => currentVine != null && currentVine.estaLista && vineJumpCooldown <= 0f;
 
     private void Awake()
     {

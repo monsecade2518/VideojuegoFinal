@@ -15,6 +15,8 @@ public class AnimationController : MonoBehaviour
 
     public string animSaltoDer = "SaltoDer";
 
+    [SerializeField] private string animClimbIzq = "ClimbIzq";
+    [SerializeField] private string animClimbDer = "ClimbDer";
     [SerializeField] private string animDanoDer = "DanoDer";
     [SerializeField] private string animDanoIzq = "DanoIzq";
     [SerializeField] private string animMuerteDer = "MuerteDer";
@@ -56,6 +58,12 @@ public class AnimationController : MonoBehaviour
             ultimaDireccion = jugador.FacingDirection;
         else if (moverX != 0f)
             ultimaDireccion = moverX > 0f ? 1 : -1;
+
+        if (jugador != null && jugador.IsClimbing)
+        {
+            ReproducirAnimacion(ultimaDireccion < 0 ? animClimbIzq : animClimbDer);
+            return;
+        }
 
         if (jugador != null && jugador.IsJumping)
         {
