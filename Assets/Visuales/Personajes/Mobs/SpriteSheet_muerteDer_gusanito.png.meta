@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: cadc4978ca0f31743972752b8d426a40
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4472977594555387039
+    second: SpriteSheet_muerteDer_gusanito_0
+  - first:
+      213: 7384123539683380132
+    second: SpriteSheet_muerteDer_gusanito_1
+  - first:
+      213: -3314647151115275317
+    second: SpriteSheet_muerteDer_gusanito_2
+  - first:
+      213: -6001215467631249985
+    second: SpriteSheet_muerteDer_gusanito_3
+  - first:
+      213: -4349557248760764359
+    second: SpriteSheet_muerteDer_gusanito_4
+  - first:
+      213: 1690127953574699434
+    second: SpriteSheet_muerteDer_gusanito_5
+  - first:
+      213: 720716260156232153
+    second: SpriteSheet_muerteDer_gusanito_6
+  - first:
+      213: 4535191213354559907
+    second: SpriteSheet_muerteDer_gusanito_7
+  - first:
+      213: 1083849353374163411
+    second: SpriteSheet_muerteDer_gusanito_8
+  - first:
+      213: -6427095434830238445
+    second: SpriteSheet_muerteDer_gusanito_9
+  - first:
+      213: 9073767870798416233
+    second: SpriteSheet_muerteDer_gusanito_10
+  - first:
+      213: 3143660450179492125
+    second: SpriteSheet_muerteDer_gusanito_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_muerteDer_gusanito_0
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1048
+        width: 1765
+        height: 1215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163be3c939acce1c0800000000000000
+      internalID: -4472977594555387039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_muerteDer_gusanito_1
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 1291
+        width: 1864
+        height: 618
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab8d609c3da97660800000000000000
+      internalID: 7384123539683380132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_muerteDer_gusanito_2
+      rect:
+        serializedVersion: 2
+        x: 3715
+        y: 1688
+        width: 226
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc373025af10002d0800000000000000
+      internalID: -3314647151115275317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_muerteDer_gusanito_3
+      rect:
+        serializedVersion: 2
+        x: 4241
+        y: 1297
+        width: 2010
+        height: 956
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb57247f35667bca0800000000000000
+      internalID: -6001215467631249985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_muerteDer_gusanito_4
+      rect:
+        serializedVersion: 2
+        x: 5844
+        y: 1688
+        width: 226
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 938a3692ab443a3c0800000000000000
+      internalID: -4349557248760764359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_muerteDer_gusanito_5
+      rect:
+        serializedVersion: 2
+        x: 6341
+        y: 1297
+        width: 2010
+        height: 956
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa127c94b6a847710800000000000000
+      internalID: 1690127953574699434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_muerteDer_gusanito_6
+      rect:
+        serializedVersion: 2
+        x: 8005
+        y: 1864
+        width: 226
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1d57ebe9f700a00800000000000000
+      internalID: 720716260156232153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_muerteDer_gusanito_7
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 627
+        width: 226
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9a87c416c30fe30800000000000000
+      internalID: 4535191213354559907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_muerteDer_gusanito_8
+      rect:
+        serializedVersion: 2
+        x: 3747
+        y: 712
+        width: 226
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d167e19e3b9a0f00800000000000000
+      internalID: 1083849353374163411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_muerteDer_gusanito_9
+      rect:
+        serializedVersion: 2
+        x: 5847
+        y: 712
+        width: 226
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31da86511ce5ec6a0800000000000000
+      internalID: -6427095434830238445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_muerteDer_gusanito_10
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 97
+        width: 2010
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 969ca49bdcf7ced70800000000000000
+      internalID: 9073767870798416233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_muerteDer_gusanito_11
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 98
+        width: 2010
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19a46b068680ab20800000000000000
+      internalID: 3143660450179492125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SpriteSheet_muerteDer_gusanito_0: -4472977594555387039
+      SpriteSheet_muerteDer_gusanito_1: 7384123539683380132
+      SpriteSheet_muerteDer_gusanito_10: 9073767870798416233
+      SpriteSheet_muerteDer_gusanito_11: 3143660450179492125
+      SpriteSheet_muerteDer_gusanito_2: -3314647151115275317
+      SpriteSheet_muerteDer_gusanito_3: -6001215467631249985
+      SpriteSheet_muerteDer_gusanito_4: -4349557248760764359
+      SpriteSheet_muerteDer_gusanito_5: 1690127953574699434
+      SpriteSheet_muerteDer_gusanito_6: 720716260156232153
+      SpriteSheet_muerteDer_gusanito_7: 4535191213354559907
+      SpriteSheet_muerteDer_gusanito_8: 1083849353374163411
+      SpriteSheet_muerteDer_gusanito_9: -6427095434830238445
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
