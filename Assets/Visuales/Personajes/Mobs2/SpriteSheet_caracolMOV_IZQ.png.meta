@@ -1,0 +1,565 @@
+fileFormatVersion: 2
+guid: 285db10914abcba43861a06e137e099b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6383069130168560199
+    second: SpriteSheet_caracolMOV_IZQ_0
+  - first:
+      213: -9084083417948714981
+    second: SpriteSheet_caracolMOV_IZQ_1
+  - first:
+      213: -284434020601816542
+    second: SpriteSheet_caracolMOV_IZQ_2
+  - first:
+      213: 7420507875488535012
+    second: SpriteSheet_caracolMOV_IZQ_3
+  - first:
+      213: 28228390120668262
+    second: SpriteSheet_caracolMOV_IZQ_4
+  - first:
+      213: 2979116336973124267
+    second: SpriteSheet_caracolMOV_IZQ_5
+  - first:
+      213: -6814696053116109731
+    second: SpriteSheet_caracolMOV_IZQ_6
+  - first:
+      213: -595663398457720498
+    second: SpriteSheet_caracolMOV_IZQ_7
+  - first:
+      213: 4246143201784783884
+    second: SpriteSheet_caracolMOV_IZQ_8
+  - first:
+      213: 919235895370481179
+    second: SpriteSheet_caracolMOV_IZQ_9
+  - first:
+      213: -7723236492285779565
+    second: SpriteSheet_caracolMOV_IZQ_10
+  - first:
+      213: 6210056819673619803
+    second: SpriteSheet_caracolMOV_IZQ_11
+  - first:
+      213: 782063064556827098
+    second: SpriteSheet_caracolMOV_IZQ_12
+  - first:
+      213: -4492606530759913982
+    second: SpriteSheet_caracolMOV_IZQ_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_0
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1410
+        width: 640
+        height: 518
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a65701e87359850800000000000000
+      internalID: 6383069130168560199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_1
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 1420
+        width: 622
+        height: 495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b18862bc24adee180800000000000000
+      internalID: -9084083417948714981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_2
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 1900
+        width: 55
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a1ef7e3cc7d0cf0800000000000000
+      internalID: -284434020601816542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_3
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 1420
+        width: 622
+        height: 495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e19b73e890faf660800000000000000
+      internalID: 7420507875488535012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_4
+      rect:
+        serializedVersion: 2
+        x: 2985
+        y: 1900
+        width: 55
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c39bd3299446000800000000000000
+      internalID: 28228390120668262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_5
+      rect:
+        serializedVersion: 2
+        x: 4119
+        y: 1420
+        width: 697
+        height: 545
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba298d14682f75920800000000000000
+      internalID: 2979116336973124267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_6
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 1415
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5cf1c5ab065d61a0800000000000000
+      internalID: -6814696053116109731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_7
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 1415
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41c9398b47cbb7f0800000000000000
+      internalID: -595663398457720498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_8
+      rect:
+        serializedVersion: 2
+        x: 4485
+        y: 1415
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1063950fa29567b4ea83e81413b83bc7
+      internalID: -1145577248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_9
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 130
+        width: 700
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c3262b13c02ae49bf0744bc687bdf7
+      internalID: -664833739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_10
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 667
+        width: 40
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffffc56f2b3ff3b4e96f678b617744bc
+      internalID: -1399917023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_11
+      rect:
+        serializedVersion: 2
+        x: 2993
+        y: 667
+        width: 40
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8618a1ddcc6757439128141da2028f7
+      internalID: 2086270454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_12
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 130
+        width: 647
+        height: 523
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fb5190ab1b24d4389740b67df01b6a
+      internalID: -607534165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_13
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 650
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bde5f6e3c0841946a2a4116bdd1a77d
+      internalID: 1351965346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_14
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 130
+        width: 647
+        height: 523
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4abe201b6f8b2442a0d86636f0202f7
+      internalID: -447102456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_15
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 650
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfee0feb6bc40141b2efe8cb017d099
+      internalID: -1703882021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_caracolMOV_IZQ_16
+      rect:
+        serializedVersion: 2
+        x: 4159
+        y: 130
+        width: 640
+        height: 518
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af920e3d40d1a0f42b434a155677f4bd
+      internalID: 119868281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b10f20d1bef9b65459f0fd0a4577a744
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1280.0,"y":1280.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      SpriteSheet_caracolMOV_IZQ_0: 6383069130168560199
+      SpriteSheet_caracolMOV_IZQ_1: -9084083417948714981
+      SpriteSheet_caracolMOV_IZQ_10: -1399917023
+      SpriteSheet_caracolMOV_IZQ_11: 2086270454
+      SpriteSheet_caracolMOV_IZQ_12: -607534165
+      SpriteSheet_caracolMOV_IZQ_13: 1351965346
+      SpriteSheet_caracolMOV_IZQ_14: -447102456
+      SpriteSheet_caracolMOV_IZQ_15: -1703882021
+      SpriteSheet_caracolMOV_IZQ_16: 119868281
+      SpriteSheet_caracolMOV_IZQ_2: -284434020601816542
+      SpriteSheet_caracolMOV_IZQ_3: 7420507875488535012
+      SpriteSheet_caracolMOV_IZQ_4: 28228390120668262
+      SpriteSheet_caracolMOV_IZQ_5: 2979116336973124267
+      SpriteSheet_caracolMOV_IZQ_6: -6814696053116109731
+      SpriteSheet_caracolMOV_IZQ_7: -595663398457720498
+      SpriteSheet_caracolMOV_IZQ_8: -1145577248
+      SpriteSheet_caracolMOV_IZQ_9: -664833739
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
