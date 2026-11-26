@@ -150,7 +150,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -215,12 +215,12 @@ TextureImporter:
       name: SpriteSheet_PlantaCarnivora_SINSATURACION_0
       rect:
         serializedVersion: 2
-        x: 174
-        y: 807
-        width: 57
-        height: 12
+        x: 0
+        y: 460
+        width: 380
+        height: 460
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -237,12 +237,12 @@ TextureImporter:
       name: SpriteSheet_PlantaCarnivora_SINSATURACION_1
       rect:
         serializedVersion: 2
-        x: 421
-        y: 469
-        width: 300
-        height: 358
+        x: 380
+        y: 460
+        width: 380
+        height: 460
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -259,12 +259,12 @@ TextureImporter:
       name: SpriteSheet_PlantaCarnivora_SINSATURACION_2
       rect:
         serializedVersion: 2
-        x: 642
-        y: 800
-        width: 37
-        height: 21
+        x: 760
+        y: 460
+        width: 380
+        height: 460
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -281,12 +281,12 @@ TextureImporter:
       name: SpriteSheet_PlantaCarnivora_SINSATURACION_3
       rect:
         serializedVersion: 2
-        x: 971
-        y: 808
-        width: 28
-        height: 17
+        x: 0
+        y: 0
+        width: 380
+        height: 460
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -303,12 +303,12 @@ TextureImporter:
       name: SpriteSheet_PlantaCarnivora_SINSATURACION_4
       rect:
         serializedVersion: 2
-        x: 999
-        y: 819
-        width: 47
-        height: 14
+        x: 380
+        y: 0
+        width: 380
+        height: 460
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -325,12 +325,12 @@ TextureImporter:
       name: SpriteSheet_PlantaCarnivora_SINSATURACION_5
       rect:
         serializedVersion: 2
-        x: 1070
-        y: 769
-        width: 70
-        height: 60
+        x: 760
+        y: 0
+        width: 380
+        height: 460
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -343,627 +343,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_6
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 459
-        width: 260
-        height: 349
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8cc0612045d08afa0800000000000000
-      internalID: -5789362666521359160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_7
-      rect:
-        serializedVersion: 2
-        x: 149
-        y: 805
-        width: 25
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e7ab1e777a1afff0800000000000000
-      internalID: -1659749341091867
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_8
-      rect:
-        serializedVersion: 2
-        x: 545
-        y: 801
-        width: 21
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e25512961650212b0800000000000000
-      internalID: -5615419869443828434
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_9
-      rect:
-        serializedVersion: 2
-        x: 806
-        y: 459
-        width: 325
-        height: 357
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cbd37512a498ef070800000000000000
-      internalID: 8142096127812386236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_10
-      rect:
-        serializedVersion: 2
-        x: 219
-        y: 627
-        width: 96
-        height: 152
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 99792e45b20d13a00800000000000000
-      internalID: 734597098764408729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_11
-      rect:
-        serializedVersion: 2
-        x: 1129
-        y: 747
-        width: 11
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d521c17f96f2cfb0800000000000000
-      internalID: -4628866302314732079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_12
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 686
-        width: 47
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b8637e5528029eb0800000000000000
-      internalID: -4714696903312054089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_13
-      rect:
-        serializedVersion: 2
-        x: 805
-        y: 688
-        width: 9
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b900833cb2fb35010800000000000000
-      internalID: 1176494122353557659
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_14
-      rect:
-        serializedVersion: 2
-        x: 1132
-        y: 679
-        width: 8
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8258eb92bec581720800000000000000
-      internalID: 2817103732007666984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_15
-      rect:
-        serializedVersion: 2
-        x: 1101
-        y: 647
-        width: 39
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 09a97505293ff87d0800000000000000
-      internalID: -2913842624146728304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_16
-      rect:
-        serializedVersion: 2
-        x: 417
-        y: 479
-        width: 10
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0f8c9c98a175720c0800000000000000
-      internalID: -4600612722843203344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_17
-      rect:
-        serializedVersion: 2
-        x: 799
-        y: 481
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ad3cff5bfc5356f50800000000000000
-      internalID: 6873959572478870490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_18
-      rect:
-        serializedVersion: 2
-        x: 419
-        y: 465
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2daf2ad7e8e303b50800000000000000
-      internalID: 6570820638047664850
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_19
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 0
-        width: 335
-        height: 372
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 58231be2fc31eaf80800000000000000
-      internalID: -8093509699775679867
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_20
-      rect:
-        serializedVersion: 2
-        x: 216
-        y: 346
-        width: 21
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b102dd1a8d669a480800000000000000
-      internalID: -8887459309024370661
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_21
-      rect:
-        serializedVersion: 2
-        x: 313
-        y: 345
-        width: 37
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d7abe1611dc88c6c0800000000000000
-      internalID: -4122890629210523011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_22
-      rect:
-        serializedVersion: 2
-        x: 421
-        y: 9
-        width: 300
-        height: 358
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 484fd085477f53550800000000000000
-      internalID: 6140085746055115908
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_23
-      rect:
-        serializedVersion: 2
-        x: 545
-        y: 341
-        width: 21
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac934ee84ec3f9be0800000000000000
-      internalID: -1468388001151960630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_24
-      rect:
-        serializedVersion: 2
-        x: 642
-        y: 340
-        width: 37
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9f48cc5cfb84fed40800000000000000
-      internalID: 5615787248848766201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_25
-      rect:
-        serializedVersion: 2
-        x: 801
-        y: 0
-        width: 260
-        height: 348
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fe893c2d49e5c7c90800000000000000
-      internalID: -7170752513396467473
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_26
-      rect:
-        serializedVersion: 2
-        x: 909
-        y: 345
-        width: 25
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a39875138cbf7d6c0800000000000000
-      internalID: -4118546496967177926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_27
-      rect:
-        serializedVersion: 2
-        x: 934
-        y: 347
-        width: 57
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 00eb4043a3833fcf0800000000000000
-      internalID: -219770134179037696
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_28
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 228
-        width: 9
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9dc16b3cd9470d9e0800000000000000
-      internalID: -1598649646774346535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_29
-      rect:
-        serializedVersion: 2
-        x: 805
-        y: 226
-        width: 47
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ed172b4f5fce8e9a0800000000000000
-      internalID: -6203447945586380322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_30
-      rect:
-        serializedVersion: 2
-        x: 979
-        y: 167
-        width: 96
-        height: 152
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d8237eb78fda84600800000000000000
-      internalID: 452803045292978829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_31
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 21
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 22990e427cd971da0800000000000000
-      internalID: -5974132902040921822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_32
-      rect:
-        serializedVersion: 2
-        x: 417
-        y: 19
-        width: 10
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9700221f3f633aa10800000000000000
-      internalID: 1919438287540453497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_PlantaCarnivora_SINSATURACION_33
-      rect:
-        serializedVersion: 2
-        x: 419
-        y: 5
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8fb92673d20a77030800000000000000
-      internalID: 3492436152112290808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 95f75f018c366214c820f0a8814b9ce9
     internalID: 0
     vertices: []
     indices: 
@@ -971,42 +355,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":380.0,"y":460.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       SpriteSheet_PlantaCarnivora_SINSATURACION_0: -678466180161484611
       SpriteSheet_PlantaCarnivora_SINSATURACION_1: -3792625419911272545
-      SpriteSheet_PlantaCarnivora_SINSATURACION_10: 734597098764408729
-      SpriteSheet_PlantaCarnivora_SINSATURACION_11: -4628866302314732079
-      SpriteSheet_PlantaCarnivora_SINSATURACION_12: -4714696903312054089
-      SpriteSheet_PlantaCarnivora_SINSATURACION_13: 1176494122353557659
-      SpriteSheet_PlantaCarnivora_SINSATURACION_14: 2817103732007666984
-      SpriteSheet_PlantaCarnivora_SINSATURACION_15: -2913842624146728304
-      SpriteSheet_PlantaCarnivora_SINSATURACION_16: -4600612722843203344
-      SpriteSheet_PlantaCarnivora_SINSATURACION_17: 6873959572478870490
-      SpriteSheet_PlantaCarnivora_SINSATURACION_18: 6570820638047664850
-      SpriteSheet_PlantaCarnivora_SINSATURACION_19: -8093509699775679867
       SpriteSheet_PlantaCarnivora_SINSATURACION_2: 4852843270147597940
-      SpriteSheet_PlantaCarnivora_SINSATURACION_20: -8887459309024370661
-      SpriteSheet_PlantaCarnivora_SINSATURACION_21: -4122890629210523011
-      SpriteSheet_PlantaCarnivora_SINSATURACION_22: 6140085746055115908
-      SpriteSheet_PlantaCarnivora_SINSATURACION_23: -1468388001151960630
-      SpriteSheet_PlantaCarnivora_SINSATURACION_24: 5615787248848766201
-      SpriteSheet_PlantaCarnivora_SINSATURACION_25: -7170752513396467473
-      SpriteSheet_PlantaCarnivora_SINSATURACION_26: -4118546496967177926
-      SpriteSheet_PlantaCarnivora_SINSATURACION_27: -219770134179037696
-      SpriteSheet_PlantaCarnivora_SINSATURACION_28: -1598649646774346535
-      SpriteSheet_PlantaCarnivora_SINSATURACION_29: -6203447945586380322
       SpriteSheet_PlantaCarnivora_SINSATURACION_3: -4078368159108384052
-      SpriteSheet_PlantaCarnivora_SINSATURACION_30: 452803045292978829
-      SpriteSheet_PlantaCarnivora_SINSATURACION_31: -5974132902040921822
-      SpriteSheet_PlantaCarnivora_SINSATURACION_32: 1919438287540453497
-      SpriteSheet_PlantaCarnivora_SINSATURACION_33: 3492436152112290808
       SpriteSheet_PlantaCarnivora_SINSATURACION_4: -3572686841478147190
       SpriteSheet_PlantaCarnivora_SINSATURACION_5: -6653775548734435366
-      SpriteSheet_PlantaCarnivora_SINSATURACION_6: -5789362666521359160
-      SpriteSheet_PlantaCarnivora_SINSATURACION_7: -1659749341091867
-      SpriteSheet_PlantaCarnivora_SINSATURACION_8: -5615419869443828434
-      SpriteSheet_PlantaCarnivora_SINSATURACION_9: 8142096127812386236
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

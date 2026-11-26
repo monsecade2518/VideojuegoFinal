@@ -137,12 +137,12 @@ TextureImporter:
       name: SpriteSheet_caminadoDer_gusanito_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 1311
-        width: 2010
-        height: 942
+        x: 0
+        y: 1200
+        width: 2100
+        height: 1200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -159,12 +159,12 @@ TextureImporter:
       name: SpriteSheet_caminadoDer_gusanito_1
       rect:
         serializedVersion: 2
-        x: 2141
-        y: 1311
-        width: 2010
-        height: 942
+        x: 2100
+        y: 1200
+        width: 2100
+        height: 1200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: SpriteSheet_caminadoDer_gusanito_2
       rect:
         serializedVersion: 2
-        x: 4318
-        y: 1317
-        width: 1864
-        height: 592
+        x: 4200
+        y: 1200
+        width: 2100
+        height: 1200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: SpriteSheet_caminadoDer_gusanito_3
       rect:
         serializedVersion: 2
-        x: 6418
-        y: 1317
-        width: 1864
-        height: 592
+        x: 6300
+        y: 1200
+        width: 2100
+        height: 1200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -225,12 +225,12 @@ TextureImporter:
       name: SpriteSheet_caminadoDer_gusanito_4
       rect:
         serializedVersion: 2
-        x: 167
-        y: 117
-        width: 1765
-        height: 946
+        x: 0
+        y: 0
+        width: 2100
+        height: 1200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -247,12 +247,12 @@ TextureImporter:
       name: SpriteSheet_caminadoDer_gusanito_5
       rect:
         serializedVersion: 2
-        x: 2267
-        y: 107
-        width: 1765
-        height: 946
+        x: 2100
+        y: 0
+        width: 2100
+        height: 1200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -269,12 +269,12 @@ TextureImporter:
       name: SpriteSheet_caminadoDer_gusanito_6
       rect:
         serializedVersion: 2
-        x: 4318
-        y: 107
-        width: 1864
-        height: 592
+        x: 4200
+        y: 0
+        width: 2100
+        height: 1200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -291,12 +291,12 @@ TextureImporter:
       name: SpriteSheet_caminadoDer_gusanito_7
       rect:
         serializedVersion: 2
-        x: 6418
-        y: 107
-        width: 1864
-        height: 592
+        x: 6300
+        y: 0
+        width: 2100
+        height: 1200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -313,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 12c88c411e2297a4a8b2d3988850c9ef
     internalID: 0
     vertices: []
     indices: 
@@ -321,7 +321,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":2100.0,"y":1200.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       SpriteSheet_caminadoDer_gusanito_0: 8642114843415631864
       SpriteSheet_caminadoDer_gusanito_1: -2834235628248814412
