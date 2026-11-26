@@ -19,12 +19,12 @@ public class MobsAnimation : MonoBehaviour
     private int estadoCaminado;
     private int estadoMuerte;
 
-     private Rigidbody2D rb;
+    private Rigidbody2D rb;
 
-     private void Awake()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        if (!CompareTag("Mob"))
+        if (!CompareTag("Mob") && !CompareTag("Mob2"))
             visual = null;
     }
 
@@ -74,7 +74,7 @@ public class MobsAnimation : MonoBehaviour
             gameObject.SetActive(false);
     }
 
-    private void MorirPorPisoton()
+    private void Morir()
     {
         int estado = mirandoDerecha ? MuerteDer : MuerteIzq;
         if (visual == null || !visual.isActiveAndEnabled || visual.runtimeAnimatorController == null ||
@@ -93,24 +93,20 @@ public class MobsAnimation : MonoBehaviour
         visual.Play(estado, 0, 0f);
     }
 
-    //Detecta plantas y paredes invisibles
-    private void OnTriggerEnter2D(Collider2D other){
-            if (estadoMuerte != 0)
-                return;
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (estadoMuerte != 0)
+            return;
 
-            if (other.CompareTag("InvisibleWall")){
-                move = !move;
-            }
+        if (other.CompareTag("InvisibleWall"))
+            move = !move;
 
-            if (gameObject.CompareTag("Mob2")){
-                if (other.CompareTag("Plant")){
-                    move = !move;
-                    GetComponent<MobXP>()?.SoltarXP();
-                    gameObject.SetActive(false);
-                }
-            }
-
+        if (CompareTag("Mob2") && other.CompareTag("Plant"))
+        {
+            move = !move;
+            Morir();
         }
+    }
 
     // Detecta el choque físico con el jugador
     private void OnCollisionEnter2D(Collision2D collision)
@@ -134,7 +130,7 @@ public class MobsAnimation : MonoBehaviour
                 {
                     playerRb.linearVelocityY = fuerzaRebote;
                 }
-                MorirPorPisoton();
+                Morir();
                 Debug.Log("El jugador mató a mob");
             }
             else

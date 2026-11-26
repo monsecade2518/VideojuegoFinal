@@ -9,41 +9,23 @@ TextureImporter:
       213: 2957927101751786859
     second: SpriteSheet_caracolMOV_DER_1
   - first:
-      213: -4254999681966515491
-    second: SpriteSheet_caracolMOV_DER_2
-  - first:
       213: 45160115529439361
     second: SpriteSheet_caracolMOV_DER_3
-  - first:
-      213: 267484030075443226
-    second: SpriteSheet_caracolMOV_DER_4
   - first:
       213: 5594375404345654937
     second: SpriteSheet_caracolMOV_DER_5
   - first:
-      213: 2390957089268827858
-    second: SpriteSheet_caracolMOV_DER_6
-  - first:
-      213: -8800910693821420102
-    second: SpriteSheet_caracolMOV_DER_7
-  - first:
-      213: 4649008511639277201
-    second: SpriteSheet_caracolMOV_DER_8
-  - first:
-      213: -6765664706667179993
+      213: -1853011682
     second: SpriteSheet_caracolMOV_DER_9
   - first:
-      213: -6361223319282652263
-    second: SpriteSheet_caracolMOV_DER_10
-  - first:
-      213: 7714983485155843858
-    second: SpriteSheet_caracolMOV_DER_11
-  - first:
-      213: 8430645035671886346
+      213: -1145582360
     second: SpriteSheet_caracolMOV_DER_12
   - first:
-      213: 215295246311818873
-    second: SpriteSheet_caracolMOV_DER_13
+      213: 868912841
+    second: SpriteSheet_caracolMOV_DER_14
+  - first:
+      213: -18454096
+    second: SpriteSheet_caracolMOV_DER_16
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -155,12 +137,12 @@ TextureImporter:
       name: SpriteSheet_caracolMOV_DER_0
       rect:
         serializedVersion: 2
-        x: 319
-        y: 1410
-        width: 640
-        height: 518
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -177,12 +159,12 @@ TextureImporter:
       name: SpriteSheet_caracolMOV_DER_1
       rect:
         serializedVersion: 2
-        x: 1599
-        y: 1420
-        width: 622
-        height: 495
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1280
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -196,37 +178,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_caracolMOV_DER_2
-      rect:
-        serializedVersion: 2
-        x: 2060
-        y: 1900
-        width: 55
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dda5cfc455433f4c0800000000000000
-      internalID: -4254999681966515491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SpriteSheet_caracolMOV_DER_3
       rect:
         serializedVersion: 2
-        x: 2879
-        y: 1420
-        width: 622
-        height: 495
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2560
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -240,37 +200,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_caracolMOV_DER_4
-      rect:
-        serializedVersion: 2
-        x: 3340
-        y: 1900
-        width: 55
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a189cb3ee4b46b300800000000000000
-      internalID: 267484030075443226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SpriteSheet_caracolMOV_DER_5
       rect:
         serializedVersion: 2
-        x: 4119
-        y: 1420
-        width: 697
-        height: 545
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 3840
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -284,81 +222,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_caracolMOV_DER_6
-      rect:
-        serializedVersion: 2
-        x: 1875
-        y: 1415
-        width: 15
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2d6021b0ec26e2120800000000000000
-      internalID: 2390957089268827858
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMOV_DER_7
-      rect:
-        serializedVersion: 2
-        x: 3155
-        y: 1415
-        width: 15
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: abd66da6a52ecd580800000000000000
-      internalID: -8800910693821420102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMOV_DER_8
-      rect:
-        serializedVersion: 2
-        x: 4435
-        y: 1415
-        width: 15
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e7fe40bf116ed548812411a626df605
-      internalID: 257890044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SpriteSheet_caracolMOV_DER_9
       rect:
         serializedVersion: 2
-        x: 276
-        y: 130
-        width: 700
-        height: 548
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -372,59 +244,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_caracolMOV_DER_10
-      rect:
-        serializedVersion: 2
-        x: 2082
-        y: 667
-        width: 38
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b3c4af79d7f3410478c481c2f6f4ada9
-      internalID: -1494802154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMOV_DER_11
-      rect:
-        serializedVersion: 2
-        x: 3372
-        y: 667
-        width: 38
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1df5ca7af6886b84799300d9e930b91b
-      internalID: 1162953127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SpriteSheet_caracolMOV_DER_12
       rect:
         serializedVersion: 2
-        x: 1589
-        y: 130
-        width: 647
-        height: 523
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1280
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -438,37 +266,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_caracolMOV_DER_13
-      rect:
-        serializedVersion: 2
-        x: 2187
-        y: 650
-        width: 6
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a1b2ac36d3cebb4296068a60f4d018f
-      internalID: -905668621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SpriteSheet_caracolMOV_DER_14
       rect:
         serializedVersion: 2
-        x: 2879
-        y: 130
-        width: 647
-        height: 523
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2560
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -482,37 +288,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_caracolMOV_DER_15
-      rect:
-        serializedVersion: 2
-        x: 3477
-        y: 650
-        width: 6
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f9de5e83c2f26641a1a8c13a77402c5
-      internalID: -173350012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SpriteSheet_caracolMOV_DER_16
       rect:
         serializedVersion: 2
-        x: 4159
-        y: 130
-        width: 640
-        height: 518
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 3840
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -543,21 +327,12 @@ TextureImporter:
     nameFileIdTable:
       SpriteSheet_caracolMOV_DER_0: 5292681326941917249
       SpriteSheet_caracolMOV_DER_1: 2957927101751786859
-      SpriteSheet_caracolMOV_DER_10: -1494802154
-      SpriteSheet_caracolMOV_DER_11: 1162953127
-      SpriteSheet_caracolMOV_DER_12: -1145582360
-      SpriteSheet_caracolMOV_DER_13: -905668621
-      SpriteSheet_caracolMOV_DER_14: 868912841
-      SpriteSheet_caracolMOV_DER_15: -173350012
-      SpriteSheet_caracolMOV_DER_16: -18454096
-      SpriteSheet_caracolMOV_DER_2: -4254999681966515491
       SpriteSheet_caracolMOV_DER_3: 45160115529439361
-      SpriteSheet_caracolMOV_DER_4: 267484030075443226
       SpriteSheet_caracolMOV_DER_5: 5594375404345654937
-      SpriteSheet_caracolMOV_DER_6: 2390957089268827858
-      SpriteSheet_caracolMOV_DER_7: -8800910693821420102
-      SpriteSheet_caracolMOV_DER_8: 257890044
       SpriteSheet_caracolMOV_DER_9: -1853011682
+      SpriteSheet_caracolMOV_DER_12: -1145582360
+      SpriteSheet_caracolMOV_DER_14: 868912841
+      SpriteSheet_caracolMOV_DER_16: -18454096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

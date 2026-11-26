@@ -4311,7 +4311,8 @@ Transform:
   m_LocalPosition: {x: 324.81, y: 42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 9100000000000001}
   m_Father: {fileID: 2075413980}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &310217805
@@ -4395,7 +4396,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310217803}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -4460,6 +4461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MobsAnimation
   velocidad: 3
   fuerzaRebote: 8
+  visual: {fileID: 9100000000000002}
 --- !u!1 &312983491
 GameObject:
   m_ObjectHideFlags: 0
@@ -30068,6 +30070,49 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &9100000000000000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 310217804}
+    m_Modifications:
+    - target: {fileID: 1909879848800760456, guid: 63ecc60955fc4acfa6b07722fa5d9cf5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909879848800760456, guid: 63ecc60955fc4acfa6b07722fa5d9cf5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755493550059404451, guid: 63ecc60955fc4acfa6b07722fa5d9cf5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 139661201979194150, guid: 63ecc60955fc4acfa6b07722fa5d9cf5, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 139661201979194150, guid: 63ecc60955fc4acfa6b07722fa5d9cf5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 63ecc60955fc4acfa6b07722fa5d9cf5, type: 3}
+--- !u!4 &9100000000000001 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1909879848800760456, guid: 63ecc60955fc4acfa6b07722fa5d9cf5, type: 3}
+  m_PrefabInstance: {fileID: 9100000000000000}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &9100000000000002 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2072419675417485780, guid: 63ecc60955fc4acfa6b07722fa5d9cf5, type: 3}
+  m_PrefabInstance: {fileID: 9100000000000000}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -9,131 +9,17 @@ TextureImporter:
       213: 6611573642531127141
     second: SpriteSheet_caracolMUERTE_DER_1
   - first:
-      213: 6674649672387222033
-    second: SpriteSheet_caracolMUERTE_DER_2
-  - first:
-      213: -7100267482523550504
-    second: SpriteSheet_caracolMUERTE_DER_3
-  - first:
-      213: 7203880826222222219
-    second: SpriteSheet_caracolMUERTE_DER_4
-  - first:
-      213: 1347626053561383951
-    second: SpriteSheet_caracolMUERTE_DER_5
-  - first:
       213: 5078647544524846559
     second: SpriteSheet_caracolMUERTE_DER_6
-  - first:
-      213: 712827330516723206
-    second: SpriteSheet_caracolMUERTE_DER_7
-  - first:
-      213: 631810109176435914
-    second: SpriteSheet_caracolMUERTE_DER_8
-  - first:
-      213: -5654208020002298747
-    second: SpriteSheet_caracolMUERTE_DER_9
-  - first:
-      213: -1746229514766612586
-    second: SpriteSheet_caracolMUERTE_DER_10
-  - first:
-      213: 129679671068454779
-    second: SpriteSheet_caracolMUERTE_DER_11
   - first:
       213: -5095145504533699816
     second: SpriteSheet_caracolMUERTE_DER_12
   - first:
-      213: 5317205661989269236
-    second: SpriteSheet_caracolMUERTE_DER_13
-  - first:
-      213: 8809638270321667047
-    second: SpriteSheet_caracolMUERTE_DER_14
-  - first:
-      213: 8467234656248108928
-    second: SpriteSheet_caracolMUERTE_DER_15
-  - first:
-      213: -5732132400930099499
-    second: SpriteSheet_caracolMUERTE_DER_16
-  - first:
-      213: -6931182977060382049
-    second: SpriteSheet_caracolMUERTE_DER_17
-  - first:
-      213: 507724313176866789
-    second: SpriteSheet_caracolMUERTE_DER_18
-  - first:
-      213: 6501145708373710170
-    second: SpriteSheet_caracolMUERTE_DER_19
-  - first:
-      213: -9125708151518695331
-    second: SpriteSheet_caracolMUERTE_DER_20
-  - first:
-      213: 2557335809409986987
-    second: SpriteSheet_caracolMUERTE_DER_21
-  - first:
-      213: 5565182656370594320
-    second: SpriteSheet_caracolMUERTE_DER_22
-  - first:
-      213: 3334808052743501726
-    second: SpriteSheet_caracolMUERTE_DER_23
-  - first:
-      213: -7363577752780999544
-    second: SpriteSheet_caracolMUERTE_DER_24
-  - first:
-      213: 5244269448979961546
-    second: SpriteSheet_caracolMUERTE_DER_25
-  - first:
-      213: -2232264374043286052
-    second: SpriteSheet_caracolMUERTE_DER_26
-  - first:
-      213: -1905804744257522580
-    second: SpriteSheet_caracolMUERTE_DER_27
-  - first:
-      213: 5039946768950624661
-    second: SpriteSheet_caracolMUERTE_DER_28
-  - first:
-      213: -8394246772444356143
-    second: SpriteSheet_caracolMUERTE_DER_29
-  - first:
       213: 1956209870459669986
     second: SpriteSheet_caracolMUERTE_DER_30
   - first:
-      213: -1791797632895479246
-    second: SpriteSheet_caracolMUERTE_DER_31
-  - first:
-      213: 7466626699938944885
-    second: SpriteSheet_caracolMUERTE_DER_32
-  - first:
-      213: 367384773306094430
-    second: SpriteSheet_caracolMUERTE_DER_33
-  - first:
-      213: 7325163790446427057
-    second: SpriteSheet_caracolMUERTE_DER_34
-  - first:
-      213: 1827809864538482811
-    second: SpriteSheet_caracolMUERTE_DER_35
-  - first:
       213: -5597716968553598730
     second: SpriteSheet_caracolMUERTE_DER_36
-  - first:
-      213: -99794765189685274
-    second: SpriteSheet_caracolMUERTE_DER_37
-  - first:
-      213: 5125407165263724849
-    second: SpriteSheet_caracolMUERTE_DER_38
-  - first:
-      213: 7122944056530539621
-    second: SpriteSheet_caracolMUERTE_DER_39
-  - first:
-      213: 8667189067047819349
-    second: SpriteSheet_caracolMUERTE_DER_40
-  - first:
-      213: 43890390799893605
-    second: SpriteSheet_caracolMUERTE_DER_41
-  - first:
-      213: 4137918531360247052
-    second: SpriteSheet_caracolMUERTE_DER_42
-  - first:
-      213: -2309640341880185546
-    second: SpriteSheet_caracolMUERTE_DER_43
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -245,12 +131,12 @@ TextureImporter:
       name: SpriteSheet_caracolMUERTE_DER_0
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1408
-        width: 638
-        height: 520
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -267,12 +153,12 @@ TextureImporter:
       name: SpriteSheet_caracolMUERTE_DER_1
       rect:
         serializedVersion: 2
-        x: 1600
-        y: 1408
-        width: 735
-        height: 550
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1280
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -286,103 +172,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_2
-      rect:
-        serializedVersion: 2
-        x: 3460
-        y: 1899
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 11a51d2638e11ac50800000000000000
-      internalID: 6674649672387222033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_3
-      rect:
-        serializedVersion: 2
-        x: 3468
-        y: 1750
-        width: 147
-        height: 208
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8dc3dede758c67d90800000000000000
-      internalID: -7100267482523550504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_4
-      rect:
-        serializedVersion: 2
-        x: 4740
-        y: 1899
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b8b1933917359f360800000000000000
-      internalID: 7203880826222222219
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_5
-      rect:
-        serializedVersion: 2
-        x: 4748
-        y: 1750
-        width: 147
-        height: 208
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f0c769471cab3b210800000000000000
-      internalID: 1347626053561383951
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SpriteSheet_caracolMUERTE_DER_6
       rect:
         serializedVersion: 2
-        x: 2890
-        y: 1408
-        width: 681
-        height: 457
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2560
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -396,125 +194,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_7
-      rect:
-        serializedVersion: 2
-        x: 3201
-        y: 1850
-        width: 39
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 606a3ad2ea874e900800000000000000
-      internalID: 712827330516723206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_8
-      rect:
-        serializedVersion: 2
-        x: 4368
-        y: 1844
-        width: 81
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac456f262f3a4c800800000000000000
-      internalID: 631810109176435914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_9
-      rect:
-        serializedVersion: 2
-        x: 4317
-        y: 1816
-        width: 18
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 584299953c73881b0800000000000000
-      internalID: -5654208020002298747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_10
-      rect:
-        serializedVersion: 2
-        x: 4295
-        y: 1804
-        width: 12
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 697880c128524c7e0800000000000000
-      internalID: -1746229514766612586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_11
-      rect:
-        serializedVersion: 2
-        x: 2906
-        y: 1481
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b7fef9849f6bcc100800000000000000
-      internalID: 129679671068454779
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SpriteSheet_caracolMUERTE_DER_12
       rect:
         serializedVersion: 2
-        x: 4154
-        y: 1429
-        width: 690
-        height: 350
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3840
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -528,389 +216,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_13
-      rect:
-        serializedVersion: 2
-        x: 4191
-        y: 1420
-        width: 44
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4fee098b0628ac940800000000000000
-      internalID: 5317205661989269236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_14
-      rect:
-        serializedVersion: 2
-        x: 4387
-        y: 1408
-        width: 65
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7eba536d45f124a70800000000000000
-      internalID: 8809638270321667047
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_15
-      rect:
-        serializedVersion: 2
-        x: 4432
-        y: 1427
-        width: 31
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0879b8bfe09a18570800000000000000
-      internalID: 8467234656248108928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_16
-      rect:
-        serializedVersion: 2
-        x: 4519
-        y: 1418
-        width: 45
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5deed0593ff5370b0800000000000000
-      internalID: -5732132400930099499
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_17
-      rect:
-        serializedVersion: 2
-        x: 4600
-        y: 1427
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f9ad41b2ecd7fcf90800000000000000
-      internalID: -6931182977060382049
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_18
-      rect:
-        serializedVersion: 2
-        x: 3400
-        y: 1357
-        width: 48
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5ef7cb2a29ccb0700800000000000000
-      internalID: 507724313176866789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_19
-      rect:
-        serializedVersion: 2
-        x: 4734
-        y: 1368
-        width: 29
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a559ba4c395b83a50800000000000000
-      internalID: 6501145708373710170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_20
-      rect:
-        serializedVersion: 2
-        x: 900
-        y: 619
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d5077d849c8fa5180800000000000000
-      internalID: -9125708151518695331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_21
-      rect:
-        serializedVersion: 2
-        x: 908
-        y: 470
-        width: 147
-        height: 208
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ba1b44b8e5b7d7320800000000000000
-      internalID: 2557335809409986987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_22
-      rect:
-        serializedVersion: 2
-        x: 2180
-        y: 619
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 012522fe3208b3d40800000000000000
-      internalID: 5565182656370594320
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_23
-      rect:
-        serializedVersion: 2
-        x: 2188
-        y: 470
-        width: 147
-        height: 208
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e9773e1614e974e20800000000000000
-      internalID: 3334808052743501726
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_24
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 564
-        width: 81
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 884f4893c015fc990800000000000000
-      internalID: -7363577752780999544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_25
-      rect:
-        serializedVersion: 2
-        x: 1808
-        y: 564
-        width: 81
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac652ec474367c840800000000000000
-      internalID: 5244269448979961546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_26
-      rect:
-        serializedVersion: 2
-        x: 477
-        y: 536
-        width: 18
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd5e36cf0676501e0800000000000000
-      internalID: -2232264374043286052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_27
-      rect:
-        serializedVersion: 2
-        x: 1757
-        y: 536
-        width: 18
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c64b647bea83d85e0800000000000000
-      internalID: -1905804744257522580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_28
-      rect:
-        serializedVersion: 2
-        x: 455
-        y: 524
-        width: 12
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5910e2232ec71f540800000000000000
-      internalID: 5039946768950624661
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_29
-      rect:
-        serializedVersion: 2
-        x: 1735
-        y: 524
-        width: 12
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d12c7bf805a18b80800000000000000
-      internalID: -8394246772444356143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SpriteSheet_caracolMUERTE_DER_30
       rect:
         serializedVersion: 2
-        x: 314
-        y: 149
-        width: 690
-        height: 350
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -924,125 +238,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_31
-      rect:
-        serializedVersion: 2
-        x: 351
-        y: 140
-        width: 44
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23211e5db814227e0800000000000000
-      internalID: -1791797632895479246
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_32
-      rect:
-        serializedVersion: 2
-        x: 547
-        y: 128
-        width: 65
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 577de487c69ce9760800000000000000
-      internalID: 7466626699938944885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_33
-      rect:
-        serializedVersion: 2
-        x: 592
-        y: 147
-        width: 31
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e531ccc3186391500800000000000000
-      internalID: 367384773306094430
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_34
-      rect:
-        serializedVersion: 2
-        x: 679
-        y: 138
-        width: 45
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1bbfc1338a538a560800000000000000
-      internalID: 7325163790446427057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_35
-      rect:
-        serializedVersion: 2
-        x: 760
-        y: 147
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b7865cc336fad5910800000000000000
-      internalID: 1827809864538482811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SpriteSheet_caracolMUERTE_DER_36
       rect:
         serializedVersion: 2
-        x: 1594
-        y: 149
-        width: 690
-        height: 350
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1280
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1051,160 +255,6 @@ TextureImporter:
       bones: []
       spriteID: 6f0bf28331ae052b0800000000000000
       internalID: -5597716968553598730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_37
-      rect:
-        serializedVersion: 2
-        x: 1631
-        y: 140
-        width: 44
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6efdc6690357d9ef0800000000000000
-      internalID: -99794765189685274
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_38
-      rect:
-        serializedVersion: 2
-        x: 1827
-        y: 128
-        width: 65
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 13149c649aa112740800000000000000
-      internalID: 5125407165263724849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_39
-      rect:
-        serializedVersion: 2
-        x: 1872
-        y: 147
-        width: 31
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5649b7461e7c9d260800000000000000
-      internalID: 7122944056530539621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_40
-      rect:
-        serializedVersion: 2
-        x: 1959
-        y: 138
-        width: 45
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 558d886298a084870800000000000000
-      internalID: 8667189067047819349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_41
-      rect:
-        serializedVersion: 2
-        x: 2040
-        y: 147
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5644ea0f31eeb9000800000000000000
-      internalID: 43890390799893605
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_42
-      rect:
-        serializedVersion: 2
-        x: 894
-        y: 88
-        width: 29
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c0dcb3b0bf6dc6930800000000000000
-      internalID: 4137918531360247052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_caracolMUERTE_DER_43
-      rect:
-        serializedVersion: 2
-        x: 2174
-        y: 88
-        width: 29
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 63dd157985282ffd0800000000000000
-      internalID: -2309640341880185546
       vertices: []
       indices: 
       edges: []
@@ -1225,48 +275,10 @@ TextureImporter:
     nameFileIdTable:
       SpriteSheet_caracolMUERTE_DER_0: -2550774314588058649
       SpriteSheet_caracolMUERTE_DER_1: 6611573642531127141
-      SpriteSheet_caracolMUERTE_DER_10: -1746229514766612586
-      SpriteSheet_caracolMUERTE_DER_11: 129679671068454779
-      SpriteSheet_caracolMUERTE_DER_12: -5095145504533699816
-      SpriteSheet_caracolMUERTE_DER_13: 5317205661989269236
-      SpriteSheet_caracolMUERTE_DER_14: 8809638270321667047
-      SpriteSheet_caracolMUERTE_DER_15: 8467234656248108928
-      SpriteSheet_caracolMUERTE_DER_16: -5732132400930099499
-      SpriteSheet_caracolMUERTE_DER_17: -6931182977060382049
-      SpriteSheet_caracolMUERTE_DER_18: 507724313176866789
-      SpriteSheet_caracolMUERTE_DER_19: 6501145708373710170
-      SpriteSheet_caracolMUERTE_DER_2: 6674649672387222033
-      SpriteSheet_caracolMUERTE_DER_20: -9125708151518695331
-      SpriteSheet_caracolMUERTE_DER_21: 2557335809409986987
-      SpriteSheet_caracolMUERTE_DER_22: 5565182656370594320
-      SpriteSheet_caracolMUERTE_DER_23: 3334808052743501726
-      SpriteSheet_caracolMUERTE_DER_24: -7363577752780999544
-      SpriteSheet_caracolMUERTE_DER_25: 5244269448979961546
-      SpriteSheet_caracolMUERTE_DER_26: -2232264374043286052
-      SpriteSheet_caracolMUERTE_DER_27: -1905804744257522580
-      SpriteSheet_caracolMUERTE_DER_28: 5039946768950624661
-      SpriteSheet_caracolMUERTE_DER_29: -8394246772444356143
-      SpriteSheet_caracolMUERTE_DER_3: -7100267482523550504
-      SpriteSheet_caracolMUERTE_DER_30: 1956209870459669986
-      SpriteSheet_caracolMUERTE_DER_31: -1791797632895479246
-      SpriteSheet_caracolMUERTE_DER_32: 7466626699938944885
-      SpriteSheet_caracolMUERTE_DER_33: 367384773306094430
-      SpriteSheet_caracolMUERTE_DER_34: 7325163790446427057
-      SpriteSheet_caracolMUERTE_DER_35: 1827809864538482811
-      SpriteSheet_caracolMUERTE_DER_36: -5597716968553598730
-      SpriteSheet_caracolMUERTE_DER_37: -99794765189685274
-      SpriteSheet_caracolMUERTE_DER_38: 5125407165263724849
-      SpriteSheet_caracolMUERTE_DER_39: 7122944056530539621
-      SpriteSheet_caracolMUERTE_DER_4: 7203880826222222219
-      SpriteSheet_caracolMUERTE_DER_40: 8667189067047819349
-      SpriteSheet_caracolMUERTE_DER_41: 43890390799893605
-      SpriteSheet_caracolMUERTE_DER_42: 4137918531360247052
-      SpriteSheet_caracolMUERTE_DER_43: -2309640341880185546
-      SpriteSheet_caracolMUERTE_DER_5: 1347626053561383951
       SpriteSheet_caracolMUERTE_DER_6: 5078647544524846559
-      SpriteSheet_caracolMUERTE_DER_7: 712827330516723206
-      SpriteSheet_caracolMUERTE_DER_8: 631810109176435914
-      SpriteSheet_caracolMUERTE_DER_9: -5654208020002298747
+      SpriteSheet_caracolMUERTE_DER_12: -5095145504533699816
+      SpriteSheet_caracolMUERTE_DER_30: 1956209870459669986
+      SpriteSheet_caracolMUERTE_DER_36: -5597716968553598730
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
