@@ -6,6 +6,8 @@ using UnityEngine;
 
 public static class InputHelper{
     public static bool GameplayInputBlocked { get; set; }
+    public static bool VinesInputBlocked { get; set; }
+    public static bool PlantsInputBlocked { get; set; }
 
     public static float Horizontal(){
         if (GameplayInputBlocked) return 0f;
@@ -66,7 +68,7 @@ public static class InputHelper{
     }
 
     public static bool VinesPressed(){
-        if (GameplayInputBlocked) return false;
+        if (GameplayInputBlocked || VinesInputBlocked) return false;
 
         #if ENABLE_INPUT_SYSTEM
             return Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame;
@@ -76,7 +78,7 @@ public static class InputHelper{
     }
 
     public static bool PlantsPressed(){
-        if (GameplayInputBlocked) return false;
+        if (GameplayInputBlocked || PlantsInputBlocked) return false;
 
         #if ENABLE_INPUT_SYSTEM
             return Keyboard.current != null && Keyboard.current.qKey.wasPressedThisFrame;

@@ -29,6 +29,8 @@ public class CameraFollow2D : MonoBehaviour
     private Vector3 velocity; // Internal state for SmoothDamp.
     private Vector3 lastTargetPos;
     private Vector2 currentLookAhead;
+    private Vector2 shakeOffset;
+    private Vector3 appliedShakeOffset;
 
     private void Awake()
     {
@@ -52,7 +54,8 @@ public class CameraFollow2D : MonoBehaviour
         if (target == null)
             return;
 
-        Vector3 desired = transform.position;
+        Vector3 followPosition = transform.position - appliedShakeOffset;
+        Vector3 desired = followPosition;
 
         // 1. Look-ahead based on the target's movement direction.
         Vector3 targetDelta = target.position - lastTargetPos;
@@ -76,7 +79,7 @@ public class CameraFollow2D : MonoBehaviour
         // 2. Dead zone: only move when the focus point leaves the box.
         if (followX)
         {
-            float dx = focus.x - transform.position.x;
+            float dx = focus.x - followPosition.x;
 
             if (Mathf.Abs(dx) > deadZone.x)
             {
@@ -86,7 +89,7 @@ public class CameraFollow2D : MonoBehaviour
 
         if (followY)
         {
-            float dy = focus.y - transform.position.y;
+            float dy = focus.y - followPosition.y;
 
             if (Mathf.Abs(dy) > deadZone.y)
             {
@@ -108,12 +111,34 @@ public class CameraFollow2D : MonoBehaviour
         desired.z = -10f;
 
         // 5. Smooth toward the desired position.
-        transform.position = Vector3.SmoothDamp(
-            transform.position,
+        Vector3 smoothedPosition = Vector3.SmoothDamp(
+            followPosition,
             desired,
             ref velocity,
             smoothTime
         );
+
+        Vector3 visiblePosition = smoothedPosition + (Vector3)shakeOffset;
+        if (shakeOffset.sqrMagnitude > 0f && levelBounds != null)
+            visiblePosition = ClampToBounds(visiblePosition);
+
+        appliedShakeOffset = visiblePosition - smoothedPosition;
+        transform.position = visiblePosition;
+    }
+
+    public void SetShakeOffset(Vector2 offset)
+    {
+        shakeOffset = offset;
+        if (offset.sqrMagnitude == 0f && appliedShakeOffset.sqrMagnitude > 0f)
+        {
+            transform.position -= appliedShakeOffset;
+            appliedShakeOffset = Vector3.zero;
+        }
+    }
+
+    private void OnDisable()
+    {
+        SetShakeOffset(Vector2.zero);
     }
 
     private Vector3 ClampToBounds(Vector3 pos)

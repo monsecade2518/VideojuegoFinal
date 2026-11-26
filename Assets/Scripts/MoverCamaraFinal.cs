@@ -3,8 +3,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+[DefaultExecutionOrder(-10)]
 public class MoverCamaraFinal : MonoBehaviour
 {
+    private const double IntervaloTemblor = 15.0;
+
     [SerializeField] private Camera camara;
     [SerializeField, Min(0f)] private float distanciaDerecha = 20f;
     [SerializeField, Min(0f)] private float distanciaArriba = 40f;
@@ -14,6 +17,10 @@ public class MoverCamaraFinal : MonoBehaviour
     [SerializeField, Min(0f)] private float duracionRegreso = 2.5f;
     [SerializeField, Min(0.01f)] private float tamanoOrtograficoRecorrido = 29.53f;
     [SerializeField] private Rect viewportRecorrido = new Rect(0f, 0.1f, 1f, 0.8f);
+
+    [Header("Temblor")]
+    [SerializeField, Min(0.1f)] private float duracionTemblor = 2f;
+    [SerializeField, Min(0f)] private float intensidadTemblor = 0.15f;
 
     private bool recorridoUsado;
     private Coroutine recorrido;
@@ -27,6 +34,9 @@ public class MoverCamaraFinal : MonoBehaviour
     private RectTransform franjaInferior;
     private RectTransform franjaIzquierda;
     private RectTransform franjaDerecha;
+    private double siguienteTemblor = double.PositiveInfinity;
+    private double inicioTemblor;
+    private bool temblando;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -74,6 +84,55 @@ public class MoverCamaraFinal : MonoBehaviour
         yield return null;
         recorrido = null;
         RestaurarCamara();
+        siguienteTemblor = Time.timeAsDouble + IntervaloTemblor;
+    }
+
+    private void Update()
+    {
+        double ahora = Time.timeAsDouble;
+        if (temblando)
+        {
+            float transcurrido = (float)(ahora - inicioTemblor);
+            if (transcurrido >= duracionTemblor || seguimiento == null || !seguimiento.isActiveAndEnabled)
+            {
+                DetenerTemblor();
+            }
+            else
+            {
+                float fase = transcurrido * 16f;
+                float amplitud = intensidadTemblor * Mathf.Sin(Mathf.PI * transcurrido / duracionTemblor);
+                float horizontal = Mathf.Clamp01(Mathf.PerlinNoise(fase, 2f)) * 2f - 1f;
+                float vertical = Mathf.Clamp01(Mathf.PerlinNoise(fase, 13f)) * 2f - 1f;
+                seguimiento.SetShakeOffset(new Vector2(horizontal, vertical) * amplitud);
+            }
+        }
+
+        if (ahora < siguienteTemblor)
+            return;
+
+        siguienteTemblor += IntervaloTemblor;
+        if (siguienteTemblor <= ahora)
+            siguienteTemblor = ahora + IntervaloTemblor;
+
+        if (temblando || seguimiento == null || !seguimiento.isActiveAndEnabled)
+            return;
+
+        inicioTemblor = ahora;
+        temblando = true;
+        InputHelper.VinesInputBlocked = true;
+        InputHelper.PlantsInputBlocked = true;
+    }
+
+    private void DetenerTemblor()
+    {
+        if (!temblando)
+            return;
+
+        temblando = false;
+        InputHelper.VinesInputBlocked = false;
+        InputHelper.PlantsInputBlocked = false;
+        if (seguimiento != null)
+            seguimiento.SetShakeOffset(Vector2.zero);
     }
 
     private IEnumerator AnimarTramo(Vector3 destino, Rect viewportDestino, float tamanoDestino, float duracion)
@@ -150,6 +209,9 @@ public class MoverCamaraFinal : MonoBehaviour
 
     private void OnDisable()
     {
+        siguienteTemblor = double.PositiveInfinity;
+        DetenerTemblor();
+
         if (recorrido == null)
             return;
 
