@@ -15,50 +15,14 @@ TextureImporter:
       213: 5888335634454904248
     second: SpriteSheet_bossSalto_LISTO_3
   - first:
-      213: 2622025244793681762
-    second: SpriteSheet_bossSalto_LISTO_4
-  - first:
       213: -9005957747555347323
     second: SpriteSheet_bossSalto_LISTO_5
-  - first:
-      213: -8471130361383349515
-    second: SpriteSheet_bossSalto_LISTO_6
-  - first:
-      213: 8168889084818099006
-    second: SpriteSheet_bossSalto_LISTO_7
   - first:
       213: 499193702597745943
     second: SpriteSheet_bossSalto_LISTO_8
   - first:
-      213: 7383657039349810938
-    second: SpriteSheet_bossSalto_LISTO_9
-  - first:
-      213: -3275170938271826182
-    second: SpriteSheet_bossSalto_LISTO_10
-  - first:
-      213: -109106843652767115
-    second: SpriteSheet_bossSalto_LISTO_11
-  - first:
-      213: 8889844503047164863
-    second: SpriteSheet_bossSalto_LISTO_12
-  - first:
-      213: 5088614242895291651
-    second: SpriteSheet_bossSalto_LISTO_13
-  - first:
-      213: 3432501924618528315
-    second: SpriteSheet_bossSalto_LISTO_14
-  - first:
-      213: 2324397994282613492
-    second: SpriteSheet_bossSalto_LISTO_15
-  - first:
       213: -3607029456976694085
     second: SpriteSheet_bossSalto_LISTO_16
-  - first:
-      213: 8175314488869236997
-    second: SpriteSheet_bossSalto_LISTO_17
-  - first:
-      213: 8181140150259956394
-    second: SpriteSheet_bossSalto_LISTO_18
   - first:
       213: 7172852584145956780
     second: SpriteSheet_bossSalto_LISTO_19
@@ -71,36 +35,6 @@ TextureImporter:
   - first:
       213: 2783634721171398694
     second: SpriteSheet_bossSalto_LISTO_22
-  - first:
-      213: 5599634209837933377
-    second: SpriteSheet_bossSalto_LISTO_23
-  - first:
-      213: -1346364119481764254
-    second: SpriteSheet_bossSalto_LISTO_24
-  - first:
-      213: -8841147669099391365
-    second: SpriteSheet_bossSalto_LISTO_25
-  - first:
-      213: -9193926788706632206
-    second: SpriteSheet_bossSalto_LISTO_26
-  - first:
-      213: 2787245653988172040
-    second: SpriteSheet_bossSalto_LISTO_27
-  - first:
-      213: 5277600140130791089
-    second: SpriteSheet_bossSalto_LISTO_28
-  - first:
-      213: 1377349183006483581
-    second: SpriteSheet_bossSalto_LISTO_29
-  - first:
-      213: -5212570742869046887
-    second: SpriteSheet_bossSalto_LISTO_30
-  - first:
-      213: -262779786349030718
-    second: SpriteSheet_bossSalto_LISTO_31
-  - first:
-      213: -6688976281664158759
-    second: SpriteSheet_bossSalto_LISTO_32
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -147,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -212,12 +146,12 @@ TextureImporter:
       name: SpriteSheet_bossSalto_LISTO_0
       rect:
         serializedVersion: 2
-        x: 272
-        y: 1407
-        width: 701
-        height: 642
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -234,12 +168,12 @@ TextureImporter:
       name: SpriteSheet_bossSalto_LISTO_1
       rect:
         serializedVersion: 2
-        x: 1552
-        y: 1409
-        width: 701
-        height: 716
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1280
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -256,12 +190,12 @@ TextureImporter:
       name: SpriteSheet_bossSalto_LISTO_2
       rect:
         serializedVersion: 2
-        x: 2832
-        y: 1407
-        width: 701
-        height: 642
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2560
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -278,12 +212,12 @@ TextureImporter:
       name: SpriteSheet_bossSalto_LISTO_3
       rect:
         serializedVersion: 2
-        x: 4112
-        y: 1493
-        width: 701
-        height: 756
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3840
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -297,37 +231,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_4
-      rect:
-        serializedVersion: 2
-        x: 4202
-        y: 1490
-        width: 23
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 267b80c611e436420800000000000000
-      internalID: 2622025244793681762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SpriteSheet_bossSalto_LISTO_5
       rect:
         serializedVersion: 2
-        x: 5392
-        y: 1506
-        width: 701
-        height: 833
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5120
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -341,59 +253,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_6
-      rect:
-        serializedVersion: 2
-        x: 6007
-        y: 1480
-        width: 44
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5f218bb71df707a80800000000000000
-      internalID: -8471130361383349515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_7
-      rect:
-        serializedVersion: 2
-        x: 6087
-        y: 1514
-        width: 29
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e3b062e8759bd5170800000000000000
-      internalID: 8168889084818099006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SpriteSheet_bossSalto_LISTO_8
       rect:
         serializedVersion: 2
-        x: 6672
-        y: 1506
-        width: 701
-        height: 833
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6400
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -407,169 +275,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_9
-      rect:
-        serializedVersion: 2
-        x: 7287
-        y: 1480
-        width: 44
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af602cdf4f4087660800000000000000
-      internalID: 7383657039349810938
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_10
-      rect:
-        serializedVersion: 2
-        x: 7367
-        y: 1514
-        width: 29
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: afeff9d52614c82d0800000000000000
-      internalID: -3275170938271826182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_11
-      rect:
-        serializedVersion: 2
-        x: 4727
-        y: 1467
-        width: 44
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 572438d57ef5c7ef0800000000000000
-      internalID: -109106843652767115
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_12
-      rect:
-        serializedVersion: 2
-        x: 5587
-        y: 1481
-        width: 36
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fb3d590a9721f5b70800000000000000
-      internalID: 8889844503047164863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_13
-      rect:
-        serializedVersion: 2
-        x: 6867
-        y: 1481
-        width: 36
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 30564ca71b36e9640800000000000000
-      internalID: 5088614242895291651
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_14
-      rect:
-        serializedVersion: 2
-        x: 4258
-        y: 1437
-        width: 30
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b366bb37052b2af20800000000000000
-      internalID: 3432501924618528315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_15
-      rect:
-        serializedVersion: 2
-        x: 4653
-        y: 1426
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4fa78dd19abe14020800000000000000
-      internalID: 2324397994282613492
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SpriteSheet_bossSalto_LISTO_16
       rect:
         serializedVersion: 2
-        x: 272
-        y: 213
-        width: 701
-        height: 756
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -583,59 +297,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_17
-      rect:
-        serializedVersion: 2
-        x: 362
-        y: 210
-        width: 23
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 501b724863d847170800000000000000
-      internalID: 8175314488869236997
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_18
-      rect:
-        serializedVersion: 2
-        x: 887
-        y: 187
-        width: 44
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aaa3ee10f9f398170800000000000000
-      internalID: 8181140150259956394
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: SpriteSheet_bossSalto_LISTO_19
       rect:
         serializedVersion: 2
-        x: 1552
-        y: 129
-        width: 701
-        height: 716
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1280
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -652,12 +322,12 @@ TextureImporter:
       name: SpriteSheet_bossSalto_LISTO_20
       rect:
         serializedVersion: 2
-        x: 2832
-        y: 124
-        width: 757
-        height: 645
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2560
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -674,12 +344,12 @@ TextureImporter:
       name: SpriteSheet_bossSalto_LISTO_21
       rect:
         serializedVersion: 2
-        x: 4112
-        y: 124
-        width: 757
-        height: 645
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3840
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -696,12 +366,12 @@ TextureImporter:
       name: SpriteSheet_bossSalto_LISTO_22
       rect:
         serializedVersion: 2
-        x: 5392
-        y: 127
-        width: 701
-        height: 642
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5120
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -710,226 +380,6 @@ TextureImporter:
       bones: []
       spriteID: 6206dd3d70571a620800000000000000
       internalID: 2783634721171398694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_23
-      rect:
-        serializedVersion: 2
-        x: 418
-        y: 157
-        width: 30
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 143e38d45a5e5bd40800000000000000
-      internalID: 5599634209837933377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_24
-      rect:
-        serializedVersion: 2
-        x: 813
-        y: 146
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 26635f777f0c05de0800000000000000
-      internalID: -1346364119481764254
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_25
-      rect:
-        serializedVersion: 2
-        x: 3128
-        y: 113
-        width: 35
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b76de80990fed4580800000000000000
-      internalID: -8841147669099391365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_26
-      rect:
-        serializedVersion: 2
-        x: 4408
-        y: 113
-        width: 35
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2fd71341c4c986080800000000000000
-      internalID: -9193926788706632206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_27
-      rect:
-        serializedVersion: 2
-        x: 2883
-        y: 99
-        width: 9
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 80167b3a7294ea620800000000000000
-      internalID: 2787245653988172040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_28
-      rect:
-        serializedVersion: 2
-        x: 4163
-        y: 99
-        width: 9
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1be2c039d5dcd3940800000000000000
-      internalID: 5277600140130791089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_29
-      rect:
-        serializedVersion: 2
-        x: 2903
-        y: 55
-        width: 244
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d74a6c0d8c35d1310800000000000000
-      internalID: 1377349183006483581
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_30
-      rect:
-        serializedVersion: 2
-        x: 3498
-        y: 77
-        width: 15
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 99942b8d68a39a7b0800000000000000
-      internalID: -5212570742869046887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_31
-      rect:
-        serializedVersion: 2
-        x: 4183
-        y: 55
-        width: 244
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c253843d2b6a5cf0800000000000000
-      internalID: -262779786349030718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_bossSalto_LISTO_32
-      rect:
-        serializedVersion: 2
-        x: 4778
-        y: 77
-        width: 15
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9d30564f28bfb23a0800000000000000
-      internalID: -6688976281664158759
       vertices: []
       indices: 
       edges: []
@@ -950,37 +400,15 @@ TextureImporter:
     nameFileIdTable:
       SpriteSheet_bossSalto_LISTO_0: 1664430233043111878
       SpriteSheet_bossSalto_LISTO_1: 5717192341473206284
-      SpriteSheet_bossSalto_LISTO_10: -3275170938271826182
-      SpriteSheet_bossSalto_LISTO_11: -109106843652767115
-      SpriteSheet_bossSalto_LISTO_12: 8889844503047164863
-      SpriteSheet_bossSalto_LISTO_13: 5088614242895291651
-      SpriteSheet_bossSalto_LISTO_14: 3432501924618528315
-      SpriteSheet_bossSalto_LISTO_15: 2324397994282613492
-      SpriteSheet_bossSalto_LISTO_16: -3607029456976694085
-      SpriteSheet_bossSalto_LISTO_17: 8175314488869236997
-      SpriteSheet_bossSalto_LISTO_18: 8181140150259956394
-      SpriteSheet_bossSalto_LISTO_19: 7172852584145956780
       SpriteSheet_bossSalto_LISTO_2: -6942729664215525303
+      SpriteSheet_bossSalto_LISTO_3: 5888335634454904248
+      SpriteSheet_bossSalto_LISTO_5: -9005957747555347323
+      SpriteSheet_bossSalto_LISTO_8: 499193702597745943
+      SpriteSheet_bossSalto_LISTO_16: -3607029456976694085
+      SpriteSheet_bossSalto_LISTO_19: 7172852584145956780
       SpriteSheet_bossSalto_LISTO_20: -23364952422242475
       SpriteSheet_bossSalto_LISTO_21: -5678868211328667834
       SpriteSheet_bossSalto_LISTO_22: 2783634721171398694
-      SpriteSheet_bossSalto_LISTO_23: 5599634209837933377
-      SpriteSheet_bossSalto_LISTO_24: -1346364119481764254
-      SpriteSheet_bossSalto_LISTO_25: -8841147669099391365
-      SpriteSheet_bossSalto_LISTO_26: -9193926788706632206
-      SpriteSheet_bossSalto_LISTO_27: 2787245653988172040
-      SpriteSheet_bossSalto_LISTO_28: 5277600140130791089
-      SpriteSheet_bossSalto_LISTO_29: 1377349183006483581
-      SpriteSheet_bossSalto_LISTO_3: 5888335634454904248
-      SpriteSheet_bossSalto_LISTO_30: -5212570742869046887
-      SpriteSheet_bossSalto_LISTO_31: -262779786349030718
-      SpriteSheet_bossSalto_LISTO_32: -6688976281664158759
-      SpriteSheet_bossSalto_LISTO_4: 2622025244793681762
-      SpriteSheet_bossSalto_LISTO_5: -9005957747555347323
-      SpriteSheet_bossSalto_LISTO_6: -8471130361383349515
-      SpriteSheet_bossSalto_LISTO_7: 8168889084818099006
-      SpriteSheet_bossSalto_LISTO_8: 499193702597745943
-      SpriteSheet_bossSalto_LISTO_9: 7383657039349810938
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

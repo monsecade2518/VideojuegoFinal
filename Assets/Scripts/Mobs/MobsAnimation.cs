@@ -6,6 +6,8 @@ public class MobsAnimation : MonoBehaviour
     private static readonly int CaminadoIzq = Animator.StringToHash("Base Layer.caminadoIzq");
     private static readonly int MuerteDer = Animator.StringToHash("Base Layer.muerteDer");
     private static readonly int MuerteIzq = Animator.StringToHash("Base Layer.muerteIzq");
+    private static readonly int CaminadoBoss = Animator.StringToHash("Base Layer.caminado");
+    private static readonly int MuerteBoss = Animator.StringToHash("Base Layer.muerte");
 
     [SerializeField] private Animator visual;
 
@@ -16,6 +18,7 @@ public class MobsAnimation : MonoBehaviour
     [SerializeField] private float fuerzaRebote = 8f;
     private bool move = false;
     private bool mirandoDerecha;
+    private bool esBoss;
     private int estadoCaminado;
     private int estadoMuerte;
 
@@ -24,7 +27,8 @@ public class MobsAnimation : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        if (!CompareTag("Mob") && !CompareTag("Mob2"))
+        esBoss = CompareTag("BossFinal");
+        if (!esBoss && !CompareTag("Mob") && !CompareTag("Mob2"))
             visual = null;
     }
 
@@ -51,6 +55,9 @@ public class MobsAnimation : MonoBehaviour
             mirandoDerecha = velocidadX > 0f;
 
         int estado = mirandoDerecha ? CaminadoDer : CaminadoIzq;
+        if (esBoss)
+            estado = CaminadoBoss;
+
         if (estado == estadoCaminado)
             return;
 
@@ -77,6 +84,9 @@ public class MobsAnimation : MonoBehaviour
     private void Morir()
     {
         int estado = mirandoDerecha ? MuerteDer : MuerteIzq;
+        if (esBoss)
+            estado = MuerteBoss;
+
         if (visual == null || !visual.isActiveAndEnabled || visual.runtimeAnimatorController == null ||
             !visual.HasState(0, estado))
         {
