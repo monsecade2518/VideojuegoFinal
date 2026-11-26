@@ -149,12 +149,12 @@ TextureImporter:
       name: "SpriteSheet_Da\xF1oIzq_LISTO_0"
       rect:
         serializedVersion: 2
-        x: 606
-        y: 1606
-        width: 319
-        height: 772
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 1536
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.04622396}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: "SpriteSheet_Da\xF1oIzq_LISTO_1"
       rect:
         serializedVersion: 2
-        x: 2194
-        y: 1594
-        width: 350
-        height: 761
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1536
+        y: 1536
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.04622396}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -193,12 +193,12 @@ TextureImporter:
       name: "SpriteSheet_Da\xF1oIzq_LISTO_2"
       rect:
         serializedVersion: 2
-        x: 3698
-        y: 1599
-        width: 457
-        height: 747
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3072
+        y: 1536
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.04622396}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: "SpriteSheet_Da\xF1oIzq_LISTO_3"
       rect:
         serializedVersion: 2
-        x: 4114
-        y: 2193
-        width: 64
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4608
+        y: 1536
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.04622396}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -237,12 +237,12 @@ TextureImporter:
       name: "SpriteSheet_Da\xF1oIzq_LISTO_4"
       rect:
         serializedVersion: 2
-        x: 5234
-        y: 1599
-        width: 457
-        height: 747
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6144
+        y: 1536
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.04622396}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -259,12 +259,12 @@ TextureImporter:
       name: "SpriteSheet_Da\xF1oIzq_LISTO_5"
       rect:
         serializedVersion: 2
-        x: 5650
-        y: 2193
-        width: 64
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 7680
+        y: 1536
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.04622396}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -281,12 +281,12 @@ TextureImporter:
       name: "SpriteSheet_Da\xF1oIzq_LISTO_6"
       rect:
         serializedVersion: 2
-        x: 6813
-        y: 1606
-        width: 455
-        height: 641
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.04622396}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -303,12 +303,12 @@ TextureImporter:
       name: "SpriteSheet_Da\xF1oIzq_LISTO_7"
       rect:
         serializedVersion: 2
-        x: 8299
-        y: 1606
-        width: 509
-        height: 628
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1536
+        y: 0
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.5, y: 0.04622396}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -321,99 +321,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: "SpriteSheet_Da\xF1oIzq_LISTO_8"
-      rect:
-        serializedVersion: 2
-        x: 4132
-        y: 1904
-        width: 60
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 438c921e85e794e80800000000000000
-      internalID: -8193879126824073164
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "SpriteSheet_Da\xF1oIzq_LISTO_9"
-      rect:
-        serializedVersion: 2
-        x: 5668
-        y: 1904
-        width: 60
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c8063e59c2d048c20800000000000000
-      internalID: 3207703319739064460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "SpriteSheet_Da\xF1oIzq_LISTO_10"
-      rect:
-        serializedVersion: 2
-        x: 658
-        y: 58
-        width: 350
-        height: 761
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3b8ec6220adec1ab0800000000000000
-      internalID: -5035889011278944077
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "SpriteSheet_Da\xF1oIzq_LISTO_11"
-      rect:
-        serializedVersion: 2
-        x: 2142
-        y: 70
-        width: 319
-        height: 772
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dbba2db6005af62a0800000000000000
-      internalID: -6741988695922791491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7a77eea1ffb45484fa21cc7fe1bb2a4a
     internalID: 0
     vertices: []
     indices: 
@@ -421,20 +333,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1536.0,"y":1536.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0462239608168602},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       "SpriteSheet_Da\xF1oIzq_LISTO_0": 1482062393881259801
       "SpriteSheet_Da\xF1oIzq_LISTO_1": 7121376590596539072
-      "SpriteSheet_Da\xF1oIzq_LISTO_10": -5035889011278944077
-      "SpriteSheet_Da\xF1oIzq_LISTO_11": -6741988695922791491
       "SpriteSheet_Da\xF1oIzq_LISTO_2": 4591108609936893214
       "SpriteSheet_Da\xF1oIzq_LISTO_3": 1675843899266476959
       "SpriteSheet_Da\xF1oIzq_LISTO_4": 3369955132003578536
       "SpriteSheet_Da\xF1oIzq_LISTO_5": -6876770420801632583
       "SpriteSheet_Da\xF1oIzq_LISTO_6": -8784316502272596052
       "SpriteSheet_Da\xF1oIzq_LISTO_7": 7403562087137974101
-      "SpriteSheet_Da\xF1oIzq_LISTO_8": -8193879126824073164
-      "SpriteSheet_Da\xF1oIzq_LISTO_9": 3207703319739064460
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
