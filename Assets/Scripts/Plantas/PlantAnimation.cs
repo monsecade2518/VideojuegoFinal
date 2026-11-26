@@ -4,8 +4,11 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlantAnimation : MonoBehaviour
 {
+    private static readonly int ActivarAnimacion = Animator.StringToHash("Activar");
+
     [SerializeField] private float velocidad = 3f;
     [SerializeField] private string tagInvisibleWall = "InvisibleWall";
+    [SerializeField] private Animator visual;
 
     private bool move = false;
     private int dir = 1;
@@ -21,6 +24,9 @@ public class PlantAnimation : MonoBehaviour
     // Este método será llamado desde ActivadorPlant
     public void ActivarPlanta()
     {
+        if (!move && visual != null)
+            visual.SetTrigger(ActivarAnimacion);
+
         move = true;
         choques = 0;
         dir = 1;
