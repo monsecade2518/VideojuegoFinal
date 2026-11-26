@@ -81,6 +81,15 @@ public class LivesManager : MonoBehaviour
         }
     }
 
+    public void ReiniciarPorCaida()
+    {
+        if (reiniciandoEscena) return;
+
+        vidasActuales = 0;
+        reiniciandoEscena = true;
+        ReiniciarEscena(SceneManager.GetActiveScene());
+    }
+
     public void MatarPersonaje()
     {
         if (reiniciandoEscena) return;
@@ -89,11 +98,13 @@ public class LivesManager : MonoBehaviour
         reiniciandoEscena = true;
         Scene escena = SceneManager.GetActiveScene();
         PlayerSidescroller jugador = FindFirstObjectByType<PlayerSidescroller>();
+        if (jugador != null)
+            jugador.DetenerPorMuerte();
+
         AnimationController animacion = jugador != null ? jugador.GetComponentInChildren<AnimationController>() : null;
 
         if (animacion != null && animacion.ReproducirMuerte())
         {
-            jugador.DetenerPorMuerte();
             StartCoroutine(ReiniciarTrasMuerte(escena, animacion));
             return;
         }

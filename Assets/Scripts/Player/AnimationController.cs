@@ -27,6 +27,7 @@ public class AnimationController : MonoBehaviour
     private int estadoReaccion;
     private int fotogramaInicioReaccion;
     private bool muerto;
+    private bool muerteTerminada;
 
     void Awake()
     {
@@ -36,7 +37,16 @@ public class AnimationController : MonoBehaviour
 
     void LateUpdate()
     {
-        if (muerto || ReaccionEnCurso)
+        if (muerto)
+        {
+            // LateUpdate lee el estado después de que el Animator haya evaluado el fotograma.
+            if (!muerteTerminada && Time.frameCount != fotogramaInicioReaccion)
+                muerteTerminada = !ReaccionEnCurso;
+
+            return;
+        }
+
+        if (ReaccionEnCurso)
             return;
 
         estadoReaccion = 0;
@@ -67,11 +77,16 @@ public class AnimationController : MonoBehaviour
 
     public bool ReproducirMuerte()
     {
-        muerto = IniciarReaccion(animMuerteDer, animMuerteIzq);
-        return muerto;
+        if (!IniciarReaccion(animMuerteDer, animMuerteIzq))
+            return false;
+
+        animator.cullingMode = AnimatorCullingMode.AlwaysAnimate;
+        muerto = true;
+        return true;
     }
 
-    public bool MuerteEnCurso => muerto && ReaccionEnCurso;
+    public bool MuerteEnCurso => muerto && !muerteTerminada && isActiveAndEnabled &&
+        animator != null && animator.isActiveAndEnabled;
 
     private bool ReaccionEnCurso
     {

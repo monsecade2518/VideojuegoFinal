@@ -18,12 +18,13 @@ public class LoadScenes : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (cargandoEscena) return;
+        LivesManager vidas = LivesManager.Instance;
+        if (cargandoEscena || vidas == null || vidas.ReiniciandoEscena) return;
 
         if (other.CompareTag("LevelBound"))
         {
             cargandoEscena = true;
-            LivesManager.Instance.MatarPersonaje();
+            vidas.ReiniciarPorCaida();
         }
     }
 }
