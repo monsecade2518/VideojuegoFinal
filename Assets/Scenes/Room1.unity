@@ -192771,6 +192771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LivesManager
   vidasActuales: 3
   vidasMaximas: 3
+  iconoXP: {fileID: 2800000, guid: bec972b8554697244a232abe220d9cf3, type: 3}
 --- !u!4 &1791434652
 Transform:
   m_ObjectHideFlags: 0
@@ -211886,6 +211887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58aaa1154a64f394f9c1b3f69dc4540a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XPpointsManager
+  iconoXP: {fileID: 2800000, guid: f5334e3fb1df4b74db873c85ff5f14c4, type: 3}
   puntosActuales: 0
 --- !u!1 &1964492971
 GameObject:

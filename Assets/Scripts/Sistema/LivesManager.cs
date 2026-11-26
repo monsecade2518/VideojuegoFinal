@@ -14,6 +14,9 @@ public class LivesManager : MonoBehaviour
     private string nombreRoomActual = "";
     private bool reiniciandoEscena = false;
 
+    [SerializeField] private Texture2D iconoXP;
+
+
     private void Awake()
     {
         if (Instance == null)
@@ -142,8 +145,10 @@ public class LivesManager : MonoBehaviour
     estilo.fontSize = 28;
     estilo.normal.textColor = Color.white;
 
-    // Dibuja el texto en la esquina superior izquierda (x: 20, y: 20)
-    GUI.Label(new Rect(20, 20, 300, 50), "Vidas: " + vidasActuales, estilo);
+    if (iconoXP != null)
+        GUI.DrawTexture(new Rect(20, 20, 32, 32), iconoXP, ScaleMode.ScaleToFit);
+
+    GUI.Label(new Rect(60, 20, 300, 50), vidasActuales.ToString(), estilo);
 }
 
 }

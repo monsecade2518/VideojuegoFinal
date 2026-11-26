@@ -5,6 +5,9 @@ public class XPpointsManager : MonoBehaviour
 {
     public static XPpointsManager Instance { get; private set; }
 
+    [SerializeField] private Texture2D iconoXP;
+
+
     public int puntosActuales = 0;
     private int puntosInicioRoom = 0;
     private string nombreRoomActual = "";
@@ -71,12 +74,14 @@ public class XPpointsManager : MonoBehaviour
 
       private void OnGUI()
 {
-    GUIStyle estilo = new GUIStyle(GUI.skin.label);
-    estilo.fontSize = 28;
-    estilo.normal.textColor = Color.white;
+        GUIStyle estilo = new GUIStyle(GUI.skin.label);
+        estilo.fontSize = 28;
+        estilo.normal.textColor = Color.white;
 
-    // Dibuja el texto en la esquina superior izquierda (x: 20, y: 20)
-    GUI.Label(new Rect(20, 60, 300, 50), "Puntos: " + puntosActuales, estilo);
+        if (iconoXP != null)
+            GUI.DrawTexture(new Rect(20, 63, 32, 32), iconoXP, ScaleMode.ScaleToFit);
+
+        GUI.Label(new Rect(60, 60, 240, 50), puntosActuales.ToString(), estilo);
 }
 
 }
