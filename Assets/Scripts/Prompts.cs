@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,6 +25,7 @@ public class Prompts : MonoBehaviour
     private Vector2 desplazamiento;
     private bool bajarAlUltimo;
     private bool mostrado;
+    private Func<bool> puedeMostrar;
 
     private void Start()
     {
@@ -37,9 +39,18 @@ public class Prompts : MonoBehaviour
     {
         if (modo != Modo.AlEntrar || mostrado || !isActiveAndEnabled || !other.CompareTag("Player")) return;
         if (panelDestino == null || panelDestino.modo != Modo.Panel || string.IsNullOrWhiteSpace(texto)) return;
+        if (puedeMostrar != null && !puedeMostrar()) return;
 
         panelDestino.Mostrar(texto);
         mostrado = true;
+    }
+
+    public void ConfigurarAvisoAlEntrar(Prompts panel, string mensaje, Func<bool> condicion)
+    {
+        modo = Modo.AlEntrar;
+        panelDestino = panel;
+        texto = mensaje;
+        puedeMostrar = condicion;
     }
 
     public void Mostrar(string mensaje)

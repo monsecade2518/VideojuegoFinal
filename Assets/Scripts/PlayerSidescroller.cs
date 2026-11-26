@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -15,6 +16,11 @@ public class PlayerSidescroller : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundRadius = 0.15f;
     [SerializeField] private LayerMask groundLayer;
+
+    [Header("Daño por temblor")]
+    [SerializeField] private MoverCamaraFinal moverCamaraFinal;
+    private readonly List<Collider2D> contactos = new List<Collider2D>();
+    private int ultimoTemblorConDano;
 
     [Header("Climbing")]
     [SerializeField] private float climbSpeed = 4f;
@@ -86,6 +92,8 @@ public class PlayerSidescroller : MonoBehaviour
 
     private void FixedUpdate()
     {
+        AplicarDanoPorTemblor();
+
         if (IsJumping && (IsClimbing || (rb.linearVelocityY <= 0f && IsGrounded())))
             IsJumping = false;
 
@@ -126,6 +134,28 @@ public class PlayerSidescroller : MonoBehaviour
         else
         {
             rb.gravityScale = originalGravityScale;
+        }
+    }
+
+    private void AplicarDanoPorTemblor()
+    {
+        if (moverCamaraFinal == null || !moverCamaraFinal.Temblando ||
+            ultimoTemblorConDano == moverCamaraFinal.NumeroTemblor)
+            return;
+
+        LivesManager vidas = LivesManager.Instance;
+        if (vidas == null)
+            return;
+
+        rb.GetContacts(contactos);
+        foreach (Collider2D contacto in contactos)
+        {
+            if (contacto is BoxCollider2D && contacto.CompareTag("daño"))
+            {
+                ultimoTemblorConDano = moverCamaraFinal.NumeroTemblor;
+                vidas.RestarVidas(1);
+                return;
+            }
         }
     }
 

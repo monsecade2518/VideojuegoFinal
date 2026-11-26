@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class LivesManager : MonoBehaviour
 {
     public static LivesManager Instance { get; private set; }
+    public bool CinematicaRoomVista { get; set; }
 
     public int vidasActuales = 3;
     public int vidasMaximas = 3;
@@ -29,6 +30,9 @@ public class LivesManager : MonoBehaviour
 
     private void AlCargarEscena(Scene escena, LoadSceneMode modo)
     {
+        if (!reiniciandoEscena || escena.name != nombreRoomActual)
+            CinematicaRoomVista = false;
+
         reiniciandoEscena = false;
 
         if (escena.name != nombreRoomActual)
@@ -84,6 +88,7 @@ public class LivesManager : MonoBehaviour
         vidasInicioRoom = 3;
         nombreRoomActual = "";
         reiniciandoEscena = false;
+        CinematicaRoomVista = false;
     }
 
     private void OnGUI()

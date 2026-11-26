@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [DefaultExecutionOrder(-10)]
 public class MoverCamaraFinal : MonoBehaviour
 {
-    private const double IntervaloTemblor = 15.0;
+    private const double IntervaloTemblor = 5.0;
 
     [SerializeField] private Camera camara;
     [SerializeField, Min(0f)] private float distanciaDerecha = 20f;
@@ -38,11 +38,23 @@ public class MoverCamaraFinal : MonoBehaviour
     private double inicioTemblor;
     private bool temblando;
 
+    public bool Temblando => temblando;
+    public int NumeroTemblor { get; private set; }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!isActiveAndEnabled || recorridoUsado || camara == null ||
             InputHelper.GameplayInputBlocked || !other.CompareTag("Player"))
             return;
+
+        recorridoUsado = true;
+        seguimiento = camara.GetComponent<CameraFollow2D>();
+        LivesManager vidas = LivesManager.Instance;
+        if (vidas != null && vidas.CinematicaRoomVista)
+        {
+            siguienteTemblor = Time.timeAsDouble + IntervaloTemblor;
+            return;
+        }
 
         InputHelper.GameplayInputBlocked = true;
         other.GetComponentInParent<PlayerSidescroller>()?.ClearBufferedInput();
@@ -50,14 +62,12 @@ public class MoverCamaraFinal : MonoBehaviour
         posicionInicial = camara.transform.position;
         viewportInicial = camara.rect;
         tamanoOrtograficoInicial = camara.orthographicSize;
-        seguimiento = camara.GetComponent<CameraFollow2D>();
         seguimientoActivo = seguimiento != null && seguimiento.enabled;
         if (seguimientoActivo)
             seguimiento.enabled = false;
 
         CrearFranjas();
         AplicarViewport(viewportInicial);
-        recorridoUsado = true;
         recorrido = StartCoroutine(ReproducirRecorrido());
     }
 
@@ -84,6 +94,10 @@ public class MoverCamaraFinal : MonoBehaviour
         yield return null;
         recorrido = null;
         RestaurarCamara();
+        LivesManager vidas = LivesManager.Instance;
+        if (vidas != null)
+            vidas.CinematicaRoomVista = true;
+
         siguienteTemblor = Time.timeAsDouble + IntervaloTemblor;
     }
 
@@ -118,9 +132,8 @@ public class MoverCamaraFinal : MonoBehaviour
             return;
 
         inicioTemblor = ahora;
+        NumeroTemblor++;
         temblando = true;
-        InputHelper.VinesInputBlocked = true;
-        InputHelper.PlantsInputBlocked = true;
     }
 
     private void DetenerTemblor()
@@ -129,8 +142,6 @@ public class MoverCamaraFinal : MonoBehaviour
             return;
 
         temblando = false;
-        InputHelper.VinesInputBlocked = false;
-        InputHelper.PlantsInputBlocked = false;
         if (seguimiento != null)
             seguimiento.SetShakeOffset(Vector2.zero);
     }

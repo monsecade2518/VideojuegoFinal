@@ -16,6 +16,7 @@ TagManager:
   - Fragment
   - Gema
   - BossFinal
+  - "da\xF1o"
   layers:
   - Default
   - TransparentFX

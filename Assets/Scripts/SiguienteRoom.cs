@@ -4,20 +4,21 @@ using UnityEngine;
 public class SiguienteRoom : MonoBehaviour
 {
     [SerializeField] private int puntosNecesarios = 120;
-    [SerializeField] private float opacidadBloqueado = 0.35f; // Qué tan transparente se ve cerrado
+    [SerializeField] private Prompts panelPrompts;
 
     private Collider2D portalCollider;
-    private SpriteRenderer spriteRenderer;
+    private GameObject avisoPortal;
     private bool portalActivo = false;
 
     private void Awake()
     {
         portalCollider = GetComponent<Collider2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
 
         // Apagamos el collider al iniciar el room para que el player no pueda activarlo aún
         portalCollider.enabled = false;
-        CambiarOpacidad(opacidadBloqueado);
+
+        if (portalCollider is BoxCollider2D cajaPortal)
+            CrearAvisoPortal(cajaPortal);
     }
 
     private void Update()
@@ -25,26 +26,42 @@ public class SiguienteRoom : MonoBehaviour
         // Si ya se abrió, no hace falta seguir comprobando
         if (portalActivo) return;
 
-        if (XPpointsManager.Instance != null && XPpointsManager.Instance.AlcanzoMeta(puntosNecesarios))
+        if (TienePuntosSuficientes())
         {
             ActivarPortal();
         }
     }
 
+    private bool TienePuntosSuficientes()
+    {
+        return XPpointsManager.Instance != null && XPpointsManager.Instance.AlcanzoMeta(puntosNecesarios);
+    }
+
     private void ActivarPortal()
     {
         portalActivo = true;
+        if (avisoPortal != null)
+            avisoPortal.SetActive(false);
+
         portalCollider.enabled = true; // Ahora el Player ya puede tocarlo y cambiar de escena
-        CambiarOpacidad(1f); // Opacidad al 100%
         Debug.Log("¡Portal activado!");
     }
 
-    private void CambiarOpacidad(float alpha)
+    private void CrearAvisoPortal(BoxCollider2D cajaPortal)
     {
-        if (spriteRenderer == null) return;
+        Prompts panel = panelPrompts != null ? panelPrompts : gameObject.AddComponent<Prompts>();
+        avisoPortal = new GameObject("Aviso de portal bloqueado");
+        avisoPortal.layer = gameObject.layer;
+        avisoPortal.transform.SetParent(transform, false);
 
-        Color colorActual = spriteRenderer.color;
-        colorActual.a = alpha;
-        spriteRenderer.color = colorActual;
+        BoxCollider2D sensor = avisoPortal.AddComponent<BoxCollider2D>();
+        sensor.isTrigger = true;
+        sensor.offset = cajaPortal.offset;
+        sensor.size = cajaPortal.size;
+        sensor.edgeRadius = cajaPortal.edgeRadius;
+
+        Prompts aviso = avisoPortal.AddComponent<Prompts>();
+        aviso.ConfigurarAvisoAlEntrar(
+            panel, "You must kill all the enemies!", () => isActiveAndEnabled && !TienePuntosSuficientes());
     }
 }

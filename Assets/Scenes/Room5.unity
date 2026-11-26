@@ -2954,6 +2954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SiguienteRoom
   puntosNecesarios: 460
+  panelPrompts: {fileID: 1610792048}
   opacidadBloqueado: 0.35
 --- !u!1 &269967767
 GameObject:

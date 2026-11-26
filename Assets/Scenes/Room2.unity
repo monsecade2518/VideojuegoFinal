@@ -145435,7 +145435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SiguienteRoom
   puntosNecesarios: 120
-  opacidadBloqueado: 0.35
+  panelPrompts: {fileID: 545043687}
 --- !u!1 &392172204
 GameObject:
   m_ObjectHideFlags: 0
@@ -400315,8 +400315,8 @@ Transform:
   m_GameObject: {fileID: 1104490742}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 195.6, y: 70.2, z: 0}
-  m_LocalScale: {x: 2.4637, y: 2.4637, z: 2.4637}
+  m_LocalPosition: {x: 201.63, y: 70.2, z: 0}
+  m_LocalScale: {x: 13.769126, y: 2.4637, z: 2.4637}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2075413980}
@@ -701732,6 +701732,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  moverCamaraFinal: {fileID: 0}
   climbSpeed: 4
   vineJumpCooldownTime: 0.2
   knockbackTimer: 0
