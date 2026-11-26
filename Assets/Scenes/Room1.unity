@@ -10161,8 +10161,8 @@ Transform:
   m_GameObject: {fileID: 181460272}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.81, y: 1.45, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.77, y: 0.48, z: 0}
+  m_LocalScale: {x: 5.25712, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -29265,7 +29265,7 @@ Transform:
   m_GameObject: {fileID: 552550092}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.32, y: 0.07999992, z: 0}
+  m_LocalPosition: {x: 5.54, y: 0.07999992, z: 0}
   m_LocalScale: {x: 0.24425, y: 0.14739, z: 0.073699996}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45249,7 +45249,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 71.78, y: 9.45, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 18.87, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -87751,8 +87751,8 @@ Transform:
   m_GameObject: {fileID: 1644933702}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.44, y: 0.43, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.43, y: 0.43, z: 0}
+  m_LocalScale: {x: 4.97, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -104314,8 +104314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Prompts
   modo: 1
   panelDestino: {fileID: 1543369882}
-  texto: '|-Watch out for hooks and bushes. They''ll tell you where you can activate
-    them.'
+  texto: '|-Watch out for bushes. They''ll tell you where you can activate them.'
 --- !u!61 &1966396287
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -104684,6 +104683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AnimationVine
   velocidad: 3
   tagInvisibleWall: InvisibleWall
+  tope: {fileID: 0}
   estaLista: 0
 --- !u!50 &1972363481
 Rigidbody2D:
@@ -105528,6 +105528,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  moverCamaraFinal: {fileID: 0}
   climbSpeed: 4
   vineJumpCooldownTime: 0.2
   knockbackTimer: 0
@@ -110411,7 +110412,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SiguienteRoom
   puntosNecesarios: 60
   panelPrompts: {fileID: 1543369882}
-  opacidadBloqueado: 0.35
 --- !u!1 &2075413979
 GameObject:
   m_ObjectHideFlags: 0

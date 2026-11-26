@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [DefaultExecutionOrder(-10)]
 public class MoverCamaraFinal : MonoBehaviour
 {
-    private const double IntervaloTemblor = 5.0;
+    private const double IntervaloTemblor = 10.0;
 
     [SerializeField] private Camera camara;
     [SerializeField, Min(0f)] private float distanciaDerecha = 20f;

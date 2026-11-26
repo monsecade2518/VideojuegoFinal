@@ -12,8 +12,9 @@ public class Prompts : MonoBehaviour
 
     private const float Margen = 20f;
     private const float Separacion = 8f;
-    private const float DuracionEntrada = 0.32f;
-    private const float IntervaloEntrada = 0.16f;
+    private const float DuracionMinima = 4f;
+    private const float PalabrasPorSegundo = 3f;
+    private const float AltoBoton = 30f;
 
     [SerializeField] private Modo modo = Modo.Panel;
     [SerializeField, Tooltip("Asigna el componente Prompts en modo Panel de esta sala.")]
@@ -21,9 +22,15 @@ public class Prompts : MonoBehaviour
     [SerializeField, TextArea(2, 5)] private string texto = string.Empty;
 
     private readonly List<Instruccion> instrucciones = new List<Instruccion>();
-    private GUIStyle estiloTexto;
+    private readonly Queue<GUIContent> pendientes = new Queue<GUIContent>();
+    private GUIContent avisoActual;
+    private float finAviso;
+    private GUIStyle estiloHistorial;
+    private GUIStyle estiloAviso;
+    private GUIStyle estiloSombra;
     private Vector2 desplazamiento;
     private bool bajarAlUltimo;
+    private bool historialAbierto;
     private bool mostrado;
     private Func<bool> puedeMostrar;
 
@@ -57,23 +64,50 @@ public class Prompts : MonoBehaviour
     {
         if (modo != Modo.Panel || string.IsNullOrWhiteSpace(mensaje)) return;
 
-        float inicio = Time.unscaledTime;
-        if (instrucciones.Count > 0)
-            inicio = Mathf.Max(inicio, instrucciones[^1].Inicio + IntervaloEntrada);
+        pendientes.Enqueue(new GUIContent(mensaje.Trim()));
+    }
 
-        instrucciones.Add(new Instruccion(mensaje.Trim(), inicio));
-        bajarAlUltimo = true;
+    private void Update()
+    {
+        float ahora = Time.unscaledTime;
+        if (avisoActual != null)
+        {
+            if (ahora < finAviso) return;
+
+            instrucciones.Add(new Instruccion(avisoActual));
+            bajarAlUltimo = true;
+            avisoActual = null;
+        }
+
+        if (pendientes.Count == 0) return;
+
+        avisoActual = pendientes.Dequeue();
+        int palabras = avisoActual.text.Split((char[])null, StringSplitOptions.RemoveEmptyEntries).Length;
+        finAviso = ahora + Mathf.Max(DuracionMinima, 1f + palabras / PalabrasPorSegundo);
     }
 
     private void OnGUI()
     {
-        if (instrucciones.Count == 0) return;
+        if (instrucciones.Count > 0)
+            DibujarHistorial();
 
+        if (avisoActual != null && Event.current.type == EventType.Repaint)
+            DibujarAvisoCentral();
+    }
+
+    private void DibujarHistorial()
+    {
         float anchoPanel = Mathf.Min(420f, Screen.width - Margen * 2f);
-        float altoMaximo = Screen.height * 0.45f;
+        Rect boton = new Rect(Margen, Screen.height - Margen - AltoBoton, Mathf.Min(112f, anchoPanel), AltoBoton);
+        float altoMaximo = Mathf.Min(Screen.height * 0.45f, boton.y - Margen - Separacion);
         if (anchoPanel <= 60f || altoMaximo <= 0f) return;
 
-        estiloTexto ??= new GUIStyle(GUI.skin.label)
+        if (GUI.Button(boton, historialAbierto ? "Prompts -" : "Prompts +"))
+            historialAbierto = !historialAbierto;
+
+        if (!historialAbierto) return;
+
+        estiloHistorial ??= new GUIStyle(GUI.skin.label)
         {
             fontSize = 17,
             alignment = TextAnchor.MiddleLeft,
@@ -98,7 +132,7 @@ public class Prompts : MonoBehaviour
             bajarAlUltimo = false;
         }
 
-        Rect panel = new Rect(Margen, Screen.height - Margen - altoVisible, anchoPanel, altoVisible);
+        Rect panel = new Rect(Margen, boton.y - Separacion - altoVisible, anchoPanel, altoVisible);
         Rect contenido = new Rect(0f, 0f, anchoTarjeta, altoContenido);
         desplazamiento = GUI.BeginScrollView(panel, desplazamiento, contenido, false, false, GUIStyle.none, GUI.skin.verticalScrollbar);
 
@@ -107,7 +141,7 @@ public class Prompts : MonoBehaviour
             float y = 0f;
             foreach (Instruccion instruccion in instrucciones)
             {
-                Dibujar(instruccion, new Rect(0f, y, anchoTarjeta, instruccion.Alto));
+                DibujarEnHistorial(instruccion.Contenido, new Rect(0f, y, anchoTarjeta, instruccion.Alto));
                 y += instruccion.Alto + Separacion;
             }
         }
@@ -120,41 +154,65 @@ public class Prompts : MonoBehaviour
         float alto = -Separacion;
         foreach (Instruccion instruccion in instrucciones)
         {
-            instruccion.Alto = Mathf.Max(42f, estiloTexto.CalcHeight(instruccion.Contenido, ancho));
+            instruccion.Alto = Mathf.Max(42f, estiloHistorial.CalcHeight(instruccion.Contenido, ancho));
             alto += instruccion.Alto + Separacion;
         }
 
         return alto;
     }
 
-    private void Dibujar(Instruccion instruccion, Rect tarjeta)
+    private void DibujarEnHistorial(GUIContent contenido, Rect tarjeta)
     {
-        float avance = Mathf.Clamp01((Time.unscaledTime - instruccion.Inicio) / DuracionEntrada);
-        if (avance <= 0f) return;
+        Color colorAnterior = GUI.color;
+        GUI.color = new Color(0.14f, 0.20f, 0.27f, 0.5f);
+        GUI.DrawTexture(tarjeta, Texture2D.whiteTexture);
+        GUI.color = new Color(0.40f, 0.76f, 0.88f, 1f);
+        GUI.DrawTexture(new Rect(tarjeta.x, tarjeta.y, 4f, tarjeta.height), Texture2D.whiteTexture);
+        GUI.color = Color.white;
+        GUI.Label(tarjeta, contenido, estiloHistorial);
+        GUI.color = colorAnterior;
+    }
 
-        float entrada = 1f - Mathf.Pow(1f - avance, 3f);
-        tarjeta.x = Mathf.Lerp(-24f, 0f, entrada);
+    private void DibujarAvisoCentral()
+    {
+        float ancho = Mathf.Min(520f, Screen.width - Margen * 2f);
+        if (ancho <= 60f) return;
+
+        if (estiloAviso == null)
+        {
+            estiloAviso = new GUIStyle(GUI.skin.label)
+            {
+                fontSize = 20,
+                alignment = TextAnchor.MiddleCenter,
+                wordWrap = true,
+                richText = false,
+                padding = new RectOffset(18, 18, 10, 10),
+                normal = { textColor = Color.white }
+            };
+            estiloSombra = new GUIStyle(estiloAviso) { normal = { textColor = Color.black } };
+        }
+
+        float alto = Mathf.Max(42f, estiloAviso.CalcHeight(avisoActual, ancho));
+        Rect tarjeta = new Rect((Screen.width - ancho) * 0.5f, (Screen.height - alto) * 0.5f, ancho, alto);
+        Rect sombra = new Rect(tarjeta.x + 1f, tarjeta.y + 1f, tarjeta.width, tarjeta.height);
 
         Color colorAnterior = GUI.color;
-        GUI.color = new Color(0.14f, 0.20f, 0.27f, 0.5f * entrada);
+        GUI.color = new Color(0.14f, 0.20f, 0.27f, 0.25f);
         GUI.DrawTexture(tarjeta, Texture2D.whiteTexture);
-        GUI.color = new Color(0.40f, 0.76f, 0.88f, 1f * entrada);
-        GUI.DrawTexture(new Rect(tarjeta.x, tarjeta.y, 4f, tarjeta.height), Texture2D.whiteTexture);
-        GUI.color = new Color(1f, 1f, 1f, entrada);
-        GUI.Label(tarjeta, instruccion.Contenido, estiloTexto);
+        GUI.color = Color.white;
+        GUI.Label(sombra, avisoActual, estiloSombra);
+        GUI.Label(tarjeta, avisoActual, estiloAviso);
         GUI.color = colorAnterior;
     }
 
     private sealed class Instruccion
     {
         public GUIContent Contenido { get; }
-        public float Inicio { get; }
         public float Alto { get; set; }
 
-        public Instruccion(string mensaje, float inicio)
+        public Instruccion(GUIContent contenido)
         {
-            Contenido = new GUIContent(mensaje);
-            Inicio = inicio;
+            Contenido = contenido;
         }
     }
 }

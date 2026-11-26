@@ -62,6 +62,6 @@ public class SiguienteRoom : MonoBehaviour
 
         Prompts aviso = avisoPortal.AddComponent<Prompts>();
         aviso.ConfigurarAvisoAlEntrar(
-            panel, "You must kill all the enemies!", () => isActiveAndEnabled && !TienePuntosSuficientes());
+            panel, "You must kill all the enemies to go through the portal!", () => isActiveAndEnabled && !TienePuntosSuficientes());
     }
 }
